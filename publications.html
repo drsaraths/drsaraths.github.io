@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publication list of Dr. Sarath S, based on Scopus export.">
+  <title>Publications | Dr. Sarath S</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pub-hero{padding:75px 0 55px;background:linear-gradient(180deg,#f8faff,#fff)}
+    .pub-hero h1{font-size:clamp(2.6rem,6vw,4.5rem);margin:0 0 14px}
+    .pub-hero p{max-width:760px;color:var(--muted);font-size:1.05rem}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:35px 0}
+    .stat{padding:22px;background:#fff;border:1px solid var(--line);border-radius:15px}
+    .stat strong{display:block;font-size:1.8rem;line-height:1.2}
+    .stat span{color:var(--muted);font-size:.82rem}
+    .filters{position:sticky;top:72px;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:16px 0}
+    .filter-row{display:grid;grid-template-columns:1fr 180px 210px;gap:12px}
+    .filter-row input,.filter-row select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;font:inherit;color:var(--ink)}
+    .pub-list{padding:45px 0 90px}
+    .pub-card{padding:28px 0;border-top:1px solid var(--line)}
+    .pub-top{display:flex;justify-content:space-between;align-items:center;gap:15px}
+    .pub-year-badge{font-weight:800;color:var(--accent)}
+    .pub-badges{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .status,.citations{font-size:.75rem;font-weight:700;padding:5px 9px;border-radius:999px;background:#eef1ff;color:var(--accent)}
+    .status.retracted{background:#fff0f0;color:#b42318}
+    .citations{background:#f2f4f7;color:#475467}
+    .pub-card h3{font-size:1.12rem;margin:12px 0 9px;max-width:900px}
+    .authors{margin:0 0 7px;font-weight:600}
+    .source{color:var(--muted);margin:0}
+    .pub-meta{display:flex;flex-wrap:wrap;gap:15px;margin-top:10px;color:#667085;font-size:.78rem}
+    .pub-actions{display:flex;gap:15px;margin-top:12px}
+    .pub-actions a{color:var(--accent);font-size:.86rem;font-weight:700}
+    .pub-actions a:hover{text-decoration:underline}
+    .source-note{font-size:.85rem;color:var(--muted);padding:20px 0}
+    .no-results{display:none;padding:40px 0;color:var(--muted)}
+    @media(max-width:800px){
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .filter-row{grid-template-columns:1fr}
+      .filters{top:72px}
+      .pub-top{align-items:flex-start;flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="index.html">Dr. Sarath S</a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#research">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="index.html#teaching">Teaching</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="pub-hero">
+  <div class="container">
+    <p class="eyebrow">Research Output</p>
+    <h1>Publications</h1>
+    <p>
+      Complete publication record based on the Scopus export provided for
+      <strong>Scopus Author ID 57195948861</strong>.
+    </p>
+    <div class="stats">
+      <div class="stat"><strong>41</strong><span>Scopus records</span></div>
+      <div class="stat"><strong>12</strong><span>Publication years</span></div>
+      <div class="stat"><strong>258</strong><span>Total citations in export</span></div>
+      <div class="stat"><strong>4</strong><span>Journal articles</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="filters">
+  <div class="container">
+    <div class="filter-row">
+      <input id="search" type="search" placeholder="Search title, author, or source...">
+      <select id="year"><option value="">All years</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option></select>
+      <select id="type">
+        <option value="">All document types</option>
+        <option value="Article">Journal article</option>
+        <option value="Conference paper">Conference paper</option>
+        <option value="Retracted">Retracted</option>
+        <option value="Erratum">Erratum</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<section class="pub-list">
+  <div class="container">
+    <p class="source-note">Showing publications exactly from the supplied Scopus CSV. Citation counts reflect the exported Scopus snapshot and may change over time.</p>
+    <div id="publicationList">
+      
+        <article class="pub-card" data-year="2026" data-type="Conference paper" data-text="A Hybrid Deep Learning Framework for Detection, Unmixing, and Reconstruction of Mixed Pixels in Thermal Images Fathima Mariya A.K.; Sarath S. Procedia Computer Science">
+          <div class="pub-top">
+            <span class="pub-year-badge">2026</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>A Hybrid Deep Learning Framework for Detection, Unmixing, and Reconstruction of Mixed Pixels in Thermal Images</h3>
+          <p class="authors">Fathima Mariya A.K.; Sarath S.</p>
+          <p class="source"><em>Procedia Computer Science</em> · Vol. 283 · pp. 565.0–574.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1016/j.procs.2026.06.139</span>
+            <span>EID: 2-s2.0-105046068459</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1016/j.procs.2026.06.139" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105046068459&amp;doi=10.1016%2fj.procs.2026.06.139&amp;partnerID=40&amp;md5=c1825c442a57f72081654187b2b997af" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2026" data-type="Conference paper" data-text="Comparative Analysis of Thresholding and GMM-Based Methods for Mixed Pixel Identification in Thermal Images Fathima Mariya A.K.; Sarath S.; Nair J.J.; Sunitha E.V. Lecture Notes in Networks and Systems">
+          <div class="pub-top">
+            <span class="pub-year-badge">2026</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Comparative Analysis of Thresholding and GMM-Based Methods for Mixed Pixel Identification in Thermal Images</h3>
+          <p class="authors">Fathima Mariya A.K.; Sarath S.; Nair J.J.; Sunitha E.V.</p>
+          <p class="source"><em>Lecture Notes in Networks and Systems</em> · Vol. 1647 LNNS · pp. 136.0–145.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1007/978-3-032-06668-8_14</span>
+            <span>EID: 2-s2.0-105023411101</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1007/978-3-032-06668-8_14" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105023411101&amp;doi=10.1007%2f978-3-032-06668-8_14&amp;partnerID=40&amp;md5=c5e24df00d964f234c4f54bd315787ba" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2026" data-type="Conference paper" data-text="Enhanced Rice Leaf Disease Classification and Estimation Via ConvNeXT Incorporating Thermal and RGB Images Gokul Raja M.; Sarath S. Lecture Notes in Electrical Engineering">
+          <div class="pub-top">
+            <span class="pub-year-badge">2026</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Enhanced Rice Leaf Disease Classification and Estimation Via ConvNeXT Incorporating Thermal and RGB Images</h3>
+          <p class="authors">Gokul Raja M.; Sarath S.</p>
+          <p class="source"><em>Lecture Notes in Electrical Engineering</em> · Vol. 1464 LNEE · pp. 135.0–146.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1007/978-981-95-0148-9_11</span>
+            <span>EID: 2-s2.0-105034832006</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1007/978-981-95-0148-9_11" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105034832006&amp;doi=10.1007%2f978-981-95-0148-9_11&amp;partnerID=40&amp;md5=6b27370ea7ca8d42e927d405a7068590" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2026" data-type="Conference paper" data-text="Impact of Data Preprocessing Techniques on Machine Learning Algorithms Using Cardiovascular Disease Datasets Krishna V.S.; Krishna G.; Abhai A.; Krishnan A.; Sarath S. Proceedings of 4th International Conference on Self Sustainable Artificial Intelligence Systems, ICSSAS 2026">
+          <div class="pub-top">
+            <span class="pub-year-badge">2026</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Impact of Data Preprocessing Techniques on Machine Learning Algorithms Using Cardiovascular Disease Datasets</h3>
+          <p class="authors">Krishna V.S.; Krishna G.; Abhai A.; Krishnan A.; Sarath S.</p>
+          <p class="source"><em>Proceedings of 4th International Conference on Self Sustainable Artificial Intelligence Systems, ICSSAS 2026</em> · pp. 1794.0–1801.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICSSAS68835.2026.11559521</span>
+            <span>EID: 2-s2.0-105044201096</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICSSAS68835.2026.11559521" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105044201096&amp;doi=10.1109%2fICSSAS68835.2026.11559521&amp;partnerID=40&amp;md5=d332c949138e1eab8fafc4177bad20a6" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2026" data-type="Article" data-text="Unsupervised autoencoder detection with a local context-based correction for mixed pixels in thermal images Sarath S.; Sachin S.M.; Sunitha E.V.; Nair J.J. Smart Agricultural Technology">
+          <div class="pub-top">
+            <span class="pub-year-badge">2026</span>
+            <div class="pub-badges"><span class="status">Article</span><span class="citations">1 citation</span></div>
+          </div>
+          <h3>Unsupervised autoencoder detection with a local context-based correction for mixed pixels in thermal images</h3>
+          <p class="authors">Sarath S.; Sachin S.M.; Sunitha E.V.; Nair J.J.</p>
+          <p class="source"><em>Smart Agricultural Technology</em> · Vol. 13 · Art. No. 101865.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1016/j.atech.2026.101865</span>
+            <span>EID: 2-s2.0-105034189853</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1016/j.atech.2026.101865" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105034189853&amp;doi=10.1016%2fj.atech.2026.101865&amp;partnerID=40&amp;md5=0d259fff645ab8f68b9c832862a4048d" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2025" data-type="Conference paper" data-text="Algorithmic-Symphony: Machine Learning Classification Models Across Diverse Datasets for Performance Evaluation and Comparison Adithya Krishna S.; Sreeram R.; Rauniyar A.; Reddy B.M.; Sarath S. Lecture Notes in Networks and Systems">
+          <div class="pub-top">
+            <span class="pub-year-badge">2025</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Algorithmic-Symphony: Machine Learning Classification Models Across Diverse Datasets for Performance Evaluation and Comparison</h3>
+          <p class="authors">Adithya Krishna S.; Sreeram R.; Rauniyar A.; Reddy B.M.; Sarath S.</p>
+          <p class="source"><em>Lecture Notes in Networks and Systems</em> · Vol. 1319 LNNS · pp. 53.0–67.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1007/978-981-96-4145-1_5</span>
+            <span>EID: 2-s2.0-105014417843</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1007/978-981-96-4145-1_5" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105014417843&amp;doi=10.1007%2f978-981-96-4145-1_5&amp;partnerID=40&amp;md5=8ef291baed5f687270f9487672fccd54" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2025" data-type="Conference paper" data-text="Autonomous Intra Campus Navigation System Kabil Pranav K.; Pirai Soodan G.; Sarath S.; Yathis Kumar D.; Peeyush K.P. 4th IEEE North Karnataka Subsection Flagship International Conference: Holistic Engineering for Sustainable Development, NKCon 2025">
+          <div class="pub-top">
+            <span class="pub-year-badge">2025</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">1 citation</span></div>
+          </div>
+          <h3>Autonomous Intra Campus Navigation System</h3>
+          <p class="authors">Kabil Pranav K.; Pirai Soodan G.; Sarath S.; Yathis Kumar D.; Peeyush K.P.</p>
+          <p class="source"><em>4th IEEE North Karnataka Subsection Flagship International Conference: Holistic Engineering for Sustainable Development, NKCon 2025</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/NKCon66957.2025.11345803</span>
+            <span>EID: 2-s2.0-105033087092</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/NKCon66957.2025.11345803" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105033087092&amp;doi=10.1109%2fNKCon66957.2025.11345803&amp;partnerID=40&amp;md5=7b1bce6ea22029af64dacd188a98c6c5" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2025" data-type="Conference paper" data-text="Chili Leaves Disease Detection Using Thermal Images and Deep Learning Classification Tadavarthy S.N.V.V.S.G.; Eddula C.J.R.; Bollepalli R.C.; Datla A.V.; Sarath S. Lecture Notes in Networks and Systems">
+          <div class="pub-top">
+            <span class="pub-year-badge">2025</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Chili Leaves Disease Detection Using Thermal Images and Deep Learning Classification</h3>
+          <p class="authors">Tadavarthy S.N.V.V.S.G.; Eddula C.J.R.; Bollepalli R.C.; Datla A.V.; Sarath S.</p>
+          <p class="source"><em>Lecture Notes in Networks and Systems</em> · Vol. 1377 LNNS · pp. 57.0–72.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1007/978-981-96-5370-6_5</span>
+            <span>EID: 2-s2.0-105018800264</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1007/978-981-96-5370-6_5" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105018800264&amp;doi=10.1007%2f978-981-96-5370-6_5&amp;partnerID=40&amp;md5=9899303ca1d5d4b03c3aaea037e7d42a" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2025" data-type="Conference paper" data-text="Clustering-Based Linear Regression Ayush M.; Gopal B.M.; Pillai P.S.; Kumar P.S.; Sarath S. Lecture Notes in Networks and Systems">
+          <div class="pub-top">
+            <span class="pub-year-badge">2025</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Clustering-Based Linear Regression</h3>
+          <p class="authors">Ayush M.; Gopal B.M.; Pillai P.S.; Kumar P.S.; Sarath S.</p>
+          <p class="source"><em>Lecture Notes in Networks and Systems</em> · Vol. 1383 LNNS · pp. 235.0–246.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1007/978-981-96-5754-4_21</span>
+            <span>EID: 2-s2.0-105015300433</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1007/978-981-96-5754-4_21" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105015300433&amp;doi=10.1007%2f978-981-96-5754-4_21&amp;partnerID=40&amp;md5=c134fc2d434c128c31b95dfd2f457a25" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2025" data-type="Conference paper" data-text="Comparative Analysis of Machine Learning Models in Autism Spectrum Disorder Identification Kondru C.; Jayakumar A.; Sarath S. Lecture Notes in Networks and Systems">
+          <div class="pub-top">
+            <span class="pub-year-badge">2025</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Comparative Analysis of Machine Learning Models in Autism Spectrum Disorder Identification</h3>
+          <p class="authors">Kondru C.; Jayakumar A.; Sarath S.</p>
+          <p class="source"><em>Lecture Notes in Networks and Systems</em> · Vol. 1159 · pp. 285.0–297.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1007/978-981-97-8526-1_22</span>
+            <span>EID: 2-s2.0-105003857624</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1007/978-981-97-8526-1_22" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105003857624&amp;doi=10.1007%2f978-981-97-8526-1_22&amp;partnerID=40&amp;md5=5c26c5e62d32d257d1ae74e29a1b07d1" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2025" data-type="Conference paper" data-text="Deep Learning Segmentation for Measuring Crop Water Stress Index (CWSI) in Thermal Images of Sunlit Chilli Plant Leaves in Precision Agriculture Krishnan R.L.; Sarath S. Lecture Notes in Networks and Systems">
+          <div class="pub-top">
+            <span class="pub-year-badge">2025</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Deep Learning Segmentation for Measuring Crop Water Stress Index (CWSI) in Thermal Images of Sunlit Chilli Plant Leaves in Precision Agriculture</h3>
+          <p class="authors">Krishnan R.L.; Sarath S.</p>
+          <p class="source"><em>Lecture Notes in Networks and Systems</em> · Vol. 1377 LNNS · pp. 545.0–555.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1007/978-981-96-5370-6_40</span>
+            <span>EID: 2-s2.0-105018795945</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1007/978-981-96-5370-6_40" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105018795945&amp;doi=10.1007%2f978-981-96-5370-6_40&amp;partnerID=40&amp;md5=1e87ae010f071366e2c645f0a6b07466" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2025" data-type="Article" data-text="LiquidGAN: Integrating Liquid Neural Networks and Neural ODEs for High-Fidelity Thermal Image Synthesis Under Data Scarcity Sarath S.; Nair J.J. IEEE Access">
+          <div class="pub-top">
+            <span class="pub-year-badge">2025</span>
+            <div class="pub-badges"><span class="status">Article</span><span class="citations">1 citation</span></div>
+          </div>
+          <h3>LiquidGAN: Integrating Liquid Neural Networks and Neural ODEs for High-Fidelity Thermal Image Synthesis Under Data Scarcity</h3>
+          <p class="authors">Sarath S.; Nair J.J.</p>
+          <p class="source"><em>IEEE Access</em> · Vol. 13 · pp. 169758.0–169768.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ACCESS.2025.3612038</span>
+            <span>EID: 2-s2.0-105016737962</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ACCESS.2025.3612038" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105016737962&amp;doi=10.1109%2fACCESS.2025.3612038&amp;partnerID=40&amp;md5=776dddb08d6fea3c997fa12c99905dd6" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2024" data-type="Conference paper" data-text="A Detailed Analysis of Machine Learning Models to Predict Water Potability Sreekumar V.; Ihsan F.; Reghuram S.; Sarath S. 2024 15th International Conference on Computing Communication and Networking Technologies, ICCCNT 2024">
+          <div class="pub-top">
+            <span class="pub-year-badge">2024</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">1 citation</span></div>
+          </div>
+          <h3>A Detailed Analysis of Machine Learning Models to Predict Water Potability</h3>
+          <p class="authors">Sreekumar V.; Ihsan F.; Reghuram S.; Sarath S.</p>
+          <p class="source"><em>2024 15th International Conference on Computing Communication and Networking Technologies, ICCCNT 2024</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT61001.2024.10725826</span>
+            <span>EID: 2-s2.0-85213043366</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT61001.2024.10725826" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85213043366&amp;doi=10.1109%2fICCCNT61001.2024.10725826&amp;partnerID=40&amp;md5=9c1973bf16a8711d1dac82dec6a15c7c" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2024" data-type="Conference paper" data-text="An Extensive Analysis of ML Techniques for Predicting and Analysing Medical Data Rajan A.; Manoj M.; Santhosh G.; Sarath S. 5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings">
+          <div class="pub-top">
+            <span class="pub-year-badge">2024</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">9 citations</span></div>
+          </div>
+          <h3>An Extensive Analysis of ML Techniques for Predicting and Analysing Medical Data</h3>
+          <p class="authors">Rajan A.; Manoj M.; Santhosh G.; Sarath S.</p>
+          <p class="source"><em>5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings</em> · pp. 1114.0–1120.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICESC60852.2024.10689815</span>
+            <span>EID: 2-s2.0-85206640315</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICESC60852.2024.10689815" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85206640315&amp;doi=10.1109%2fICESC60852.2024.10689815&amp;partnerID=40&amp;md5=908dcf01c2c9964fb449bd39b6c491bf" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2024" data-type="Conference paper" data-text="Deep Learning-Driven Low-Resolution Thermal Image Reconstruction for Enhanced CWSI Analysis George A.T.; Deepak D.M.; Kunnath G.P.; Devi G.P.; Sarath S. 5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings">
+          <div class="pub-top">
+            <span class="pub-year-badge">2024</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">4 citations</span></div>
+          </div>
+          <h3>Deep Learning-Driven Low-Resolution Thermal Image Reconstruction for Enhanced CWSI Analysis</h3>
+          <p class="authors">George A.T.; Deepak D.M.; Kunnath G.P.; Devi G.P.; Sarath S.</p>
+          <p class="source"><em>5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings</em> · pp. 1571.0–1576.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICESC60852.2024.10689781</span>
+            <span>EID: 2-s2.0-85206692523</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICESC60852.2024.10689781" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85206692523&amp;doi=10.1109%2fICESC60852.2024.10689781&amp;partnerID=40&amp;md5=e6c47785bd43ea98741a92812e25c974" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2024" data-type="Conference paper" data-text="Detection and Classification of Respiratory Syndromes in Original and modified DCGAN Augmented Neonatal Infrared Datasets Sarath S.; Nair J.J. Procedia Computer Science">
+          <div class="pub-top">
+            <span class="pub-year-badge">2024</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">8 citations</span></div>
+          </div>
+          <h3>Detection and Classification of Respiratory Syndromes in Original and modified DCGAN Augmented Neonatal Infrared Datasets</h3>
+          <p class="authors">Sarath S.; Nair J.J.</p>
+          <p class="source"><em>Procedia Computer Science</em> · Vol. 233 · pp. 422.0–431.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1016/j.procs.2024.03.232</span>
+            <span>EID: 2-s2.0-85192451465</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1016/j.procs.2024.03.232" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85192451465&amp;doi=10.1016%2fj.procs.2024.03.232&amp;partnerID=40&amp;md5=820b916a53d20e63299e6fb9f9640c81" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2024" data-type="Conference paper" data-text="Heart Failure Prediction using Machine Learning Techniques: A Comparative Analysis Rithish; Krishnendu S.; Sarath S.; Niveditha S.; Sai B.M.S. 2024 15th International Conference on Computing Communication and Networking Technologies, ICCCNT 2024">
+          <div class="pub-top">
+            <span class="pub-year-badge">2024</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">1 citation</span></div>
+          </div>
+          <h3>Heart Failure Prediction using Machine Learning Techniques: A Comparative Analysis</h3>
+          <p class="authors">Rithish; Krishnendu S.; Sarath S.; Niveditha S.; Sai B.M.S.</p>
+          <p class="source"><em>2024 15th International Conference on Computing Communication and Networking Technologies, ICCCNT 2024</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT61001.2024.10724418</span>
+            <span>EID: 2-s2.0-85211109742</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT61001.2024.10724418" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85211109742&amp;doi=10.1109%2fICCCNT61001.2024.10724418&amp;partnerID=40&amp;md5=9f64785712d9a400a7447587f72ed535" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2024" data-type="Conference paper" data-text="Sapota Quality: Bruise Detection and Shelf Life Prediction Raviteja M.; Reddy V.V.V.K.; Aqibuddin S.; Soppa M.T.; Sarath S. 5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings">
+          <div class="pub-top">
+            <span class="pub-year-badge">2024</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">4 citations</span></div>
+          </div>
+          <h3>Sapota Quality: Bruise Detection and Shelf Life Prediction</h3>
+          <p class="authors">Raviteja M.; Reddy V.V.V.K.; Aqibuddin S.; Soppa M.T.; Sarath S.</p>
+          <p class="source"><em>5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings</em> · pp. 1469.0–1474.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICESC60852.2024.10689849</span>
+            <span>EID: 2-s2.0-85206628810</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICESC60852.2024.10689849" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85206628810&amp;doi=10.1109%2fICESC60852.2024.10689849&amp;partnerID=40&amp;md5=f9cec2c130abc6e606c4ebca4f16e781" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2023" data-type="Retracted" data-text="A Comparison of Two Transformers in the Study of Plant Disease Classification Murthy Teki V.R.N.; Anandha Ragaven R.; Manoj N.; Vipul V.; Sarath S. 2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023">
+          <div class="pub-top">
+            <span class="pub-year-badge">2023</span>
+            <div class="pub-badges"><span class="status retracted">Retracted</span><span class="citations">9 citations</span></div>
+          </div>
+          <h3>A Comparison of Two Transformers in the Study of Plant Disease Classification</h3>
+          <p class="authors">Murthy Teki V.R.N.; Anandha Ragaven R.; Manoj N.; Vipul V.; Sarath S.</p>
+          <p class="source"><em>2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT56998.2023.10307591</span>
+            <span>EID: 2-s2.0-85179851554</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT56998.2023.10307591" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85179851554&amp;doi=10.1109%2fICCCNT56998.2023.10307591&amp;partnerID=40&amp;md5=7eae771ea71faf775c63b50122c34a16" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2023" data-type="Conference paper" data-text="Comparative Study of Skin Lesion Classification Using Dermoscopic Images Pranav P.P.; Sarath S. 2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023">
+          <div class="pub-top">
+            <span class="pub-year-badge">2023</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">10 citations</span></div>
+          </div>
+          <h3>Comparative Study of Skin Lesion Classification Using Dermoscopic Images</h3>
+          <p class="authors">Pranav P.P.; Sarath S.</p>
+          <p class="source"><em>2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT56998.2023.10307324</span>
+            <span>EID: 2-s2.0-85179851519</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT56998.2023.10307324" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85179851519&amp;doi=10.1109%2fICCCNT56998.2023.10307324&amp;partnerID=40&amp;md5=dfe9ce798271d408a41d1b6e36a149f4" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2023" data-type="Erratum" data-text="Retracted: A Comparison of Two Transformers in the Study of Plant Disease Classification (2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT56998.2023.11422432) Murthy Teki V.R.N.; Anandha Ragaven R.; Manoj N.; Vipul V.; Sarath S. 2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023">
+          <div class="pub-top">
+            <span class="pub-year-badge">2023</span>
+            <div class="pub-badges"><span class="status retracted">Erratum</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Retracted: A Comparison of Two Transformers in the Study of Plant Disease Classification (2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT56998.2023.11422432)</h3>
+          <p class="authors">Murthy Teki V.R.N.; Anandha Ragaven R.; Manoj N.; Vipul V.; Sarath S.</p>
+          <p class="source"><em>2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT56998.2023.10307591</span>
+            <span>EID: 2-s2.0-105046246644</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT56998.2023.10307591" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105046246644&amp;doi=10.1109%2fICCCNT56998.2023.10307591&amp;partnerID=40&amp;md5=3888f5fcd5d53015e35a97f4943c0652" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2023" data-type="Retracted" data-text="Retraction Notice: A Comparison of Two Transformers in the Study of Plant Disease Classification (2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT56998.2023.10307591) Murthy Teki V.R.N.; Anandha Ragaven R.; Manoj N.; Vipul V.; Sarath S. 2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023">
+          <div class="pub-top">
+            <span class="pub-year-badge">2023</span>
+            <div class="pub-badges"><span class="status retracted">Retracted</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Retraction Notice: A Comparison of Two Transformers in the Study of Plant Disease Classification (2023 14th International Conference on Computing Communication and Networking Technologies (ICCCNT) DOI: 10.1109/ICCCNT56998.2023.10307591)</h3>
+          <p class="authors">Murthy Teki V.R.N.; Anandha Ragaven R.; Manoj N.; Vipul V.; Sarath S.</p>
+          <p class="source"><em>2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT56998.2023.11422432</span>
+            <span>EID: 2-s2.0-105032915362</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT56998.2023.11422432" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-105032915362&amp;doi=10.1109%2fICCCNT56998.2023.11422432&amp;partnerID=40&amp;md5=8341023c2799f787c7b1e21ca40c9d77" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2022" data-type="Conference paper" data-text="A Deep Learning approach for detection and analysis of respiratory infections in covid-19 patients using RGB and infrared images. Avuthu B.; Yenuganti N.; Kasikala S.; Viswanath A.; Sarath ACM International Conference Proceeding Series">
+          <div class="pub-top">
+            <span class="pub-year-badge">2022</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">5 citations</span></div>
+          </div>
+          <h3>A Deep Learning approach for detection and analysis of respiratory infections in covid-19 patients using RGB and infrared images.</h3>
+          <p class="authors">Avuthu B.; Yenuganti N.; Kasikala S.; Viswanath A.; Sarath</p>
+          <p class="source"><em>ACM International Conference Proceeding Series</em> · pp. 367.0–371.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1145/3549206.3549272</span>
+            <span>EID: 2-s2.0-85141150046</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1145/3549206.3549272" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85141150046&amp;doi=10.1145%2f3549206.3549272&amp;partnerID=40&amp;md5=6b9e112c4dafda17e9849e7e3db84931" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2022" data-type="Conference paper" data-text="A Novel Approach to Detect Unmanned Aerial Vehicle using Pix2Pix Generative Adversarial Network Balachandran V.; Sarath S. Proceedings of the 2nd International Conference on Artificial Intelligence and Smart Energy, ICAIS 2022">
+          <div class="pub-top">
+            <span class="pub-year-badge">2022</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">11 citations</span></div>
+          </div>
+          <h3>A Novel Approach to Detect Unmanned Aerial Vehicle using Pix2Pix Generative Adversarial Network</h3>
+          <p class="authors">Balachandran V.; Sarath S.</p>
+          <p class="source"><em>Proceedings of the 2nd International Conference on Artificial Intelligence and Smart Energy, ICAIS 2022</em> · pp. 1368.0–1373.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICAIS53314.2022.9742902</span>
+            <span>EID: 2-s2.0-85128236203</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICAIS53314.2022.9742902" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85128236203&amp;doi=10.1109%2fICAIS53314.2022.9742902&amp;partnerID=40&amp;md5=55b301046143c8e89b9a77d48d447890" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2021" data-type="Conference paper" data-text="DATA AUGMENTATION OF NEONATAL THERMAL IMAGES USING DEEP LEARNING Karthik K.G.V.S.; Nithin K.; Dhanush B.; Praveen K.; Sarath S. 2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021">
+          <div class="pub-top">
+            <span class="pub-year-badge">2021</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">8 citations</span></div>
+          </div>
+          <h3>DATA AUGMENTATION OF NEONATAL THERMAL IMAGES USING DEEP LEARNING</h3>
+          <p class="authors">Karthik K.G.V.S.; Nithin K.; Dhanush B.; Praveen K.; Sarath S.</p>
+          <p class="source"><em>2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT51525.2021.9579769</span>
+            <span>EID: 2-s2.0-85126240752</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT51525.2021.9579769" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85126240752&amp;doi=10.1109%2fICCCNT51525.2021.9579769&amp;partnerID=40&amp;md5=21b6ea91d1235ed6a89d7e7e98fec087" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2021" data-type="Conference paper" data-text="Illumination Invariant Non-Invasive Heart Rate and Blood Pressure Estimation from Facial Thermal Images using Deep Learning Nair K.S.; Sarath S. 2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021">
+          <div class="pub-top">
+            <span class="pub-year-badge">2021</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">6 citations</span></div>
+          </div>
+          <h3>Illumination Invariant Non-Invasive Heart Rate and Blood Pressure Estimation from Facial Thermal Images using Deep Learning</h3>
+          <p class="authors">Nair K.S.; Sarath S.</p>
+          <p class="source"><em>2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT51525.2021.9579621</span>
+            <span>EID: 2-s2.0-85126190537</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT51525.2021.9579621" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85126190537&amp;doi=10.1109%2fICCCNT51525.2021.9579621&amp;partnerID=40&amp;md5=0f32cdddca26b41ec0331a040ee0ddac" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2021" data-type="Conference paper" data-text="Non-invasive Machine Learning approach for classifying Blood Pressure using PPG Signals in COVID situation Durga Siva Praveen B.; Sandeep D.V.N.; Raghavendra I.V.V.; Yuvaraj M.; Sarath S. 2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021">
+          <div class="pub-top">
+            <span class="pub-year-badge">2021</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">9 citations</span></div>
+          </div>
+          <h3>Non-invasive Machine Learning approach for classifying Blood Pressure using PPG Signals in COVID situation</h3>
+          <p class="authors">Durga Siva Praveen B.; Sandeep D.V.N.; Raghavendra I.V.V.; Yuvaraj M.; Sarath S.</p>
+          <p class="source"><em>2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021</em></p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCCNT51525.2021.9579535</span>
+            <span>EID: 2-s2.0-85126189953</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCCNT51525.2021.9579535" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85126189953&amp;doi=10.1109%2fICCCNT51525.2021.9579535&amp;partnerID=40&amp;md5=edacdef57d9f2bbb4075540fa8f9a210" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2021" data-type="Conference paper" data-text="Thermal Facial Expression Recognition Using Modified ResNet152 Prabhakaran A.K.; Nair J.J.; Sarath S. Lecture Notes in Electrical Engineering">
+          <div class="pub-top">
+            <span class="pub-year-badge">2021</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">22 citations</span></div>
+          </div>
+          <h3>Thermal Facial Expression Recognition Using Modified ResNet152</h3>
+          <p class="authors">Prabhakaran A.K.; Nair J.J.; Sarath S.</p>
+          <p class="source"><em>Lecture Notes in Electrical Engineering</em> · Vol. 736 LNEE · pp. 389.0–396.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1007/978-981-33-6987-0_32</span>
+            <span>EID: 2-s2.0-85111153659</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1007/978-981-33-6987-0_32" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85111153659&amp;doi=10.1007%2f978-981-33-6987-0_32&amp;partnerID=40&amp;md5=1564efff2175cc01421266e3e703aab5" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2020" data-type="Conference paper" data-text="A Deep-Learning Approach to Find Respiratory Syndromes in Infants using Thermal Imaging Navaneeth S.; Sarath S.; Amba Nair B.; Harikrishnan K.; Prajal P. Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020">
+          <div class="pub-top">
+            <span class="pub-year-badge">2020</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">16 citations</span></div>
+          </div>
+          <h3>A Deep-Learning Approach to Find Respiratory Syndromes in Infants using Thermal Imaging</h3>
+          <p class="authors">Navaneeth S.; Sarath S.; Amba Nair B.; Harikrishnan K.; Prajal P.</p>
+          <p class="source"><em>Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020</em> · Art. No. 9182231.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCSP48568.2020.9182231</span>
+            <span>EID: 2-s2.0-85091333272</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCSP48568.2020.9182231" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091333272&amp;doi=10.1109%2fICCSP48568.2020.9182231&amp;partnerID=40&amp;md5=332bbbedc4cbf198c4c0c922a16313f4" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2020" data-type="Conference paper" data-text="Conference Room Booking Application using Flutter Praveen A.; Nanda K.; Rajith N.; Giriraj N.; Radhika R.; Mahesh N.; Vishnu K.; Anjali T.; Sarath S. Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020">
+          <div class="pub-top">
+            <span class="pub-year-badge">2020</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">17 citations</span></div>
+          </div>
+          <h3>Conference Room Booking Application using Flutter</h3>
+          <p class="authors">Praveen A.; Nanda K.; Rajith N.; Giriraj N.; Radhika R.; Mahesh N.; Vishnu K.; Anjali T.; Sarath S.</p>
+          <p class="source"><em>Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020</em> · Art. No. 9182183.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCSP48568.2020.9182183</span>
+            <span>EID: 2-s2.0-85091328840</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCSP48568.2020.9182183" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091328840&amp;doi=10.1109%2fICCSP48568.2020.9182183&amp;partnerID=40&amp;md5=86aa72e8666514d62913e16ad0f4f3d6" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2020" data-type="Conference paper" data-text="Human Emotions Recognition from Thermal Images using Yolo Algorithm Chaitanya; Sarath S.; Malavika; Prasanna; Karthik Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020">
+          <div class="pub-top">
+            <span class="pub-year-badge">2020</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">36 citations</span></div>
+          </div>
+          <h3>Human Emotions Recognition from Thermal Images using Yolo Algorithm</h3>
+          <p class="authors">Chaitanya; Sarath S.; Malavika; Prasanna; Karthik</p>
+          <p class="source"><em>Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020</em> · Art. No. 9182148.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCSP48568.2020.9182148</span>
+            <span>EID: 2-s2.0-85091333619</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCSP48568.2020.9182148" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091333619&amp;doi=10.1109%2fICCSP48568.2020.9182148&amp;partnerID=40&amp;md5=79773a73a1ef0e885ca4851ad6c2cb92" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2020" data-type="Conference paper" data-text="Visual question answering models evaluation Sarath S.; Amudha J. 2020 International Conference for Emerging Technology, INCET 2020">
+          <div class="pub-top">
+            <span class="pub-year-badge">2020</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">8 citations</span></div>
+          </div>
+          <h3>Visual question answering models evaluation</h3>
+          <p class="authors">Sarath S.; Amudha J.</p>
+          <p class="source"><em>2020 International Conference for Emerging Technology, INCET 2020</em> · Art. No. 9154094.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/INCET49848.2020.9154094</span>
+            <span>EID: 2-s2.0-85090596524</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/INCET49848.2020.9154094" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85090596524&amp;doi=10.1109%2fINCET49848.2020.9154094&amp;partnerID=40&amp;md5=269e9dc58ef6e360da71bae2868ec025" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2019" data-type="Conference paper" data-text="A comparative analysis of machine learning algorithms in detecting deceptive behaviour in humans using thermal images Ravindran A.; Gokul Krishna G.; Sagara; Sarath S. Proceedings of the 2019 IEEE International Conference on Communication and Signal Processing, ICCSP 2019">
+          <div class="pub-top">
+            <span class="pub-year-badge">2019</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">15 citations</span></div>
+          </div>
+          <h3>A comparative analysis of machine learning algorithms in detecting deceptive behaviour in humans using thermal images</h3>
+          <p class="authors">Ravindran A.; Gokul Krishna G.; Sagara; Sarath S.</p>
+          <p class="source"><em>Proceedings of the 2019 IEEE International Conference on Communication and Signal Processing, ICCSP 2019</em> · Art. No. 8697911.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCSP.2019.8697911</span>
+            <span>EID: 2-s2.0-85065590610</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCSP.2019.8697911" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065590610&amp;doi=10.1109%2fICCSP.2019.8697911&amp;partnerID=40&amp;md5=6f0e978858f5878eb1741294986814be" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2019" data-type="Conference paper" data-text="Driver face recognition and sober drunk classification using thermal images Menon S.; Swathi J.; Anit S.K.; Nair A.P.; Sarath S. Proceedings of the 2019 IEEE International Conference on Communication and Signal Processing, ICCSP 2019">
+          <div class="pub-top">
+            <span class="pub-year-badge">2019</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">25 citations</span></div>
+          </div>
+          <h3>Driver face recognition and sober drunk classification using thermal images</h3>
+          <p class="authors">Menon S.; Swathi J.; Anit S.K.; Nair A.P.; Sarath S.</p>
+          <p class="source"><em>Proceedings of the 2019 IEEE International Conference on Communication and Signal Processing, ICCSP 2019</em> · Art. No. 8697908.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCSP.2019.8697908</span>
+            <span>EID: 2-s2.0-85065591540</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCSP.2019.8697908" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065591540&amp;doi=10.1109%2fICCSP.2019.8697908&amp;partnerID=40&amp;md5=79bcfb9eb3e3b29f28034bdf4a9ab0e6" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2019" data-type="Conference paper" data-text="Numerical studies on flow past top surface cooled circular cylinder at low Reynolds number Stephen S.; Ajith Kumar S.; Sarath S. Materials Today: Proceedings">
+          <div class="pub-top">
+            <span class="pub-year-badge">2019</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Numerical studies on flow past top surface cooled circular cylinder at low Reynolds number</h3>
+          <p class="authors">Stephen S.; Ajith Kumar S.; Sarath S.</p>
+          <p class="source"><em>Materials Today: Proceedings</em> · Vol. 46 · pp. 4653.0–4658.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1016/j.matpr.2020.10.289</span>
+            <span>EID: 2-s2.0-85113780169</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1016/j.matpr.2020.10.289" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85113780169&amp;doi=10.1016%2fj.matpr.2020.10.289&amp;partnerID=40&amp;md5=02cd1af56b0dff07e8929bd61a0456c5" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2019" data-type="Conference paper" data-text="Region of Interest Based Comparative Analysis in Deception Detection using Thermal Images Ravindran A.; Krishna G.G.; Sagara; Sarath S. 2019 2nd International Conference on Intelligent Computing, Instrumentation and Control Technologies, ICICICT 2019">
+          <div class="pub-top">
+            <span class="pub-year-badge">2019</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">4 citations</span></div>
+          </div>
+          <h3>Region of Interest Based Comparative Analysis in Deception Detection using Thermal Images</h3>
+          <p class="authors">Ravindran A.; Krishna G.G.; Sagara; Sarath S.</p>
+          <p class="source"><em>2019 2nd International Conference on Intelligent Computing, Instrumentation and Control Technologies, ICICICT 2019</em> · Art. No. 8993169.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICICICT46008.2019.8993169</span>
+            <span>EID: 2-s2.0-85080109199</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICICICT46008.2019.8993169" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85080109199&amp;doi=10.1109%2fICICICT46008.2019.8993169&amp;partnerID=40&amp;md5=68d9227103001372dbe7583749f40feb" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2018" data-type="Conference paper" data-text="Priority Based Real Time Smart Traffic Control System Using Dynamic Background Sarath S.; Deepthi L.R. Proceedings of the 2018 IEEE International Conference on Communication and Signal Processing, ICCSP 2018">
+          <div class="pub-top">
+            <span class="pub-year-badge">2018</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">13 citations</span></div>
+          </div>
+          <h3>Priority Based Real Time Smart Traffic Control System Using Dynamic Background</h3>
+          <p class="authors">Sarath S.; Deepthi L.R.</p>
+          <p class="source"><em>Proceedings of the 2018 IEEE International Conference on Communication and Signal Processing, ICCSP 2018</em> · Art. No. 8524501.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCSP.2018.8524501</span>
+            <span>EID: 2-s2.0-85057750318</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCSP.2018.8524501" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85057750318&amp;doi=10.1109%2fICCSP.2018.8524501&amp;partnerID=40&amp;md5=c69efd61f6e835188e445f1aaa3df278" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2018" data-type="Conference paper" data-text="Real-Time Video Segmentation Using a Single Click Sarath S.; Anamika A.M. Proceedings of the 2018 IEEE International Conference on Communication and Signal Processing, ICCSP 2018">
+          <div class="pub-top">
+            <span class="pub-year-badge">2018</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">5 citations</span></div>
+          </div>
+          <h3>Real-Time Video Segmentation Using a Single Click</h3>
+          <p class="authors">Sarath S.; Anamika A.M.</p>
+          <p class="source"><em>Proceedings of the 2018 IEEE International Conference on Communication and Signal Processing, ICCSP 2018</em> · Art. No. 8524479.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1109/ICCSP.2018.8524479</span>
+            <span>EID: 2-s2.0-85057750734</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1109/ICCSP.2018.8524479" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85057750734&amp;doi=10.1109%2fICCSP.2018.8524479&amp;partnerID=40&amp;md5=c0de0ace5809a0019126f0b2b1cabe7e" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2017" data-type="Conference paper" data-text="Effect of tip clearance on wall shear stress of an axial LVAD Sarath S.; Vikas R. IOP Conference Series: Materials Science and Engineering">
+          <div class="pub-top">
+            <span class="pub-year-badge">2017</span>
+            <div class="pub-badges"><span class="status">Conference paper</span><span class="citations">1 citation</span></div>
+          </div>
+          <h3>Effect of tip clearance on wall shear stress of an axial LVAD</h3>
+          <p class="authors">Sarath S.; Vikas R.</p>
+          <p class="source"><em>IOP Conference Series: Materials Science and Engineering</em> · Vol. 243 · Issue 1.0 · Art. No. 12010.0</p>
+          <div class="pub-meta">
+            <span>DOI: 10.1088/1757-899X/243/1/012010</span>
+            <span>EID: 2-s2.0-85034108276</span>
+          </div>
+          <div class="pub-actions"><a href="https://doi.org/10.1088/1757-899X/243/1/012010" target="_blank" rel="noopener">DOI</a><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85034108276&amp;doi=10.1088%2f1757-899X%2f243%2f1%2f012010&amp;partnerID=40&amp;md5=aa6440f967bb74880b537debe3e11cdc" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2016" data-type="Article" data-text="Real time smart traffic control system using dynamic background Sarath S.; Chinnu R.; Gopika P.S. International Journal of Control Theory and Applications">
+          <div class="pub-top">
+            <span class="pub-year-badge">2016</span>
+            <div class="pub-badges"><span class="status">Article</span><span class="citations">8 citations</span></div>
+          </div>
+          <h3>Real time smart traffic control system using dynamic background</h3>
+          <p class="authors">Sarath S.; Chinnu R.; Gopika P.S.</p>
+          <p class="source"><em>International Journal of Control Theory and Applications</em> · Vol. 9 · Issue 10.0 · pp. 4249.0–4255.0</p>
+          <div class="pub-meta">
+            
+            <span>EID: 2-s2.0-84989235087</span>
+          </div>
+          <div class="pub-actions"><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84989235087&amp;partnerID=40&amp;md5=518b7db9651ba0132d4bfe8e24a87928" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+        <article class="pub-card" data-year="2015" data-type="Article" data-text="Generalization of crossfilter.Js for amrita dynamic dashboard James J.A.; Karthika S.; Keerthana S.K.K.; Reshma P.K.; Sarath S.; Sathyadevan S.; Hariram S. International Journal of Applied Engineering Research">
+          <div class="pub-top">
+            <span class="pub-year-badge">2015</span>
+            <div class="pub-badges"><span class="status">Article</span><span class="citations">0 citations</span></div>
+          </div>
+          <h3>Generalization of crossfilter.Js for amrita dynamic dashboard</h3>
+          <p class="authors">James J.A.; Karthika S.; Keerthana S.K.K.; Reshma P.K.; Sarath S.; Sathyadevan S.; Hariram S.</p>
+          <p class="source"><em>International Journal of Applied Engineering Research</em> · Vol. 10 · Issue 13.0 · pp. 22818.0–33815.0</p>
+          <div class="pub-meta">
+            
+            <span>EID: 2-s2.0-84940179319</span>
+          </div>
+          <div class="pub-actions"><a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84940179319&amp;partnerID=40&amp;md5=ce98e583e499232f56219b5a24f4de22" target="_blank" rel="noopener">Scopus</a></div>
+        </article>
+    </div>
+    <div id="noResults" class="no-results">No publications match your search.</div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Dr. Sarath S</span>
+    <span>Amrita Vishwa Vidyapeetham</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const search = document.getElementById("search");
+const year = document.getElementById("year");
+const type = document.getElementById("type");
+const cards = [...document.querySelectorAll(".pub-card")];
+const noResults = document.getElementById("noResults");
+
+function filterPublications() {
+  const q = search.value.toLowerCase().trim();
+  const y = year.value;
+  const t = type.value;
+  let visible = 0;
+  cards.forEach(card => {
+    const matchesQ = !q || card.dataset.text.toLowerCase().includes(q);
+    const matchesY = !y || card.dataset.year === y;
+    const matchesT = !t || card.dataset.type === t;
+    const show = matchesQ && matchesY && matchesT;
+    card.style.display = show ? "" : "none";
+    if (show) visible++;
+  });
+  noResults.style.display = visible ? "none" : "block";
+}
+[search, year, type].forEach(el => el.addEventListener("input", filterPublications));
+[search, year, type].forEach(el => el.addEventListener("change", filterPublications));
+</script>
+</body>
+</html>
