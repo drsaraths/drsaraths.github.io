@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://drsaraths.github.io/sitemap.xml

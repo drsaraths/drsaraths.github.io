@@ -1,220 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dr. Sarath S - Assistant Professor and researcher in Computer Science and Engineering.">
-  <title>Dr. Sarath S | Faculty & Research</title>
+  <title>Dr. Sarath S | Thermal imaging and machine learning</title>
+  <meta name="description" content="Dr. Sarath S is an Assistant Professor (Sr. Gr.) in Computer Science and Engineering at Amrita Vishwa Vidyapeetham, Amritapuri. His research covers thermal image synthesis, mixed-pixel detection and correction, and thermal sensing for agriculture and health.">
+  <link rel="canonical" href="https://drsaraths.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dr. Sarath S | Thermal imaging and machine learning">
+  <meta property="og:description" content="Thermal image synthesis, mixed-pixel detection and correction, and thermal sensing for agriculture and health.">
+  <meta property="og:url" content="https://drsaraths.github.io/">
+  <meta name="theme-color" content="#7b1e2e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sarath S",
+    "honorificPrefix": "Dr.",
+    "jobTitle": "Assistant Professor (Sr. Gr.)",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Amrita Vishwa Vidyapeetham",
+      "department": "Department of Computer Science and Engineering, Amritapuri"
+    },
+    "url": "https://drsaraths.github.io/",
+    "sameAs": [
+      "https://orcid.org/0000-0002-3009-3119",
+      "https://scholar.google.com/citations?hl=en&user=gVkkGKgAAAAJ",
+      "https://www.scopus.com/authid/detail.uri?authorId=57195948861"
+    ],
+    "knowsAbout": ["Thermal imaging", "Generative adversarial networks", "Mixed-pixel detection", "Neural ODEs", "Liquid neural networks", "Precision agriculture"]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#home">Dr. Sarath S</a>
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="index.html">Dr. Sarath S</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
       <div class="nav-links">
-        <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="publications.html">Publications</a>
+        <a href="#current-work">Current work</a>
         <a href="#teaching">Teaching</a>
-        <a href="#projects">Projects</a>
+        <a href="publications.html">Publications</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
+  <main id="main">
+    <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Computer Science & Engineering</p>
           <h1>Dr. Sarath S</h1>
-          <h2>Assistant Professor (Sr. Gr.)</h2>
-          <p class="hero-text">
-            Faculty member and researcher working at the intersection of machine learning,
-            thermal imaging, data mining, and intelligent generative models.
-          </p>
-          <div class="hero-buttons">
-            <a class="btn primary" href="#research">Explore Research</a>
-            <a class="btn secondary" href="#contact">Contact</a>
-          </div>
-          <div class="profile-links">
-            <a href="https://scholar.google.com/citations?hl=en&user=gVkkGKgAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
-            <a href="https://orcid.org/0000-0002-3009-3119" target="_blank" rel="noopener">ORCID ↗</a>
+          <p class="role">Assistant Professor (Sr. Gr.), Department of Computer Science and Engineering, Amrita School of Computing, Amrita Vishwa Vidyapeetham, Amritapuri</p>
+          <p class="lead">I study how thermal cameras see, and where they get it wrong.</p>
+          <p class="hero-text">My research covers thermal image synthesis, the detection and correction of mixed pixels, and thermal sensing for agriculture and health.</p>
+          <div class="hero-actions">
+            <a class="btn" href="publications.html">Read the publications</a>
+            <a class="text-link" href="https://scholar.google.com/citations?hl=en&user=gVkkGKgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="text-link" href="https://orcid.org/0000-0002-3009-3119" target="_blank" rel="noopener">ORCID</a>
           </div>
         </div>
-        <div class="profile-card">
-          <div class="profile-placeholder">SS</div>
-          <h3>Department of Computer Science & Engineering</h3>
-          <p>Amrita Vishwa Vidyapeetham<br>Amrita School of Computing, Amritapuri</p>
+
+        <figure class="viewport" aria-labelledby="vp-title">
+          <div class="vp-bar">
+            <span class="vp-title" id="vp-title">A leaf as a thermal camera sees it</span>
+            <div class="segmented" role="group" aria-label="View">
+              <button type="button" data-mode="raw" aria-pressed="false">Raw</button>
+              <button type="button" data-mode="mixed" aria-pressed="true">Mixed pixels</button>
+              <button type="button" data-mode="corrected" aria-pressed="false">Corrected</button>
+            </div>
+          </div>
+          <canvas id="thermal" tabindex="0" role="img" aria-label="Synthetic thermal image of a leaf on soil. Use the arrow keys or pointer to inspect individual pixels."></canvas>
+          <div class="vp-legend" aria-hidden="true"><span>27 °C</span><span class="vp-scale"></span><span>38 °C</span></div>
+          <p class="vp-readout" id="thermal-readout" aria-live="polite"></p>
+          <p class="vp-note">A made-up scene for illustration, not data from my papers. The camera averages everything inside a pixel, so pixels on an edge report a blend.</p>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container section-grid">
+        <h2>About</h2>
+        <div class="section-body">
+          <p class="big">I am an Assistant Professor in the Department of Computer Science and Engineering at Amrita Vishwa Vidyapeetham, Amritapuri.</p>
+          <p>My PhD thesis is titled <em>Thermal Image Synthesis and Refinement through Generative Models with Mixed-Pixel Analysis and Correction</em>. Dr. Sunitha E. V. and Dr. Jyothisha J. Nair supervised it. It asks two questions. How do we generate convincing thermal images when data are scarce? And how do we find and repair pixels whose readings mix two surfaces?</p>
+          <p><!-- stats:start -->Since 2015 I have published 38 papers indexed in Scopus.<!-- stats:end --> Most of them cover thermal imaging and applied machine learning.</p>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Academic Profile</h2>
-        </div>
-        <div class="two-col">
-          <div>
-            <p>
-              I am an Assistant Professor (Sr. Gr.) in the Department of Computer Science
-              and Engineering at Amrita Vishwa Vidyapeetham, Amritapuri. My academic and
-              research interests focus on machine learning, thermal imaging, data mining,
-              and algorithms, with applications in intelligent image understanding.
-            </p>
-            <p>
-              My research includes thermal image synthesis and refinement, data augmentation
-              under data scarcity, mixed-pixel identification and correction, and
-              thermally aware generative modelling.
-            </p>
-          </div>
-          <div class="info-box">
-            <div><span>Affiliation</span><strong>Amrita Vishwa Vidyapeetham</strong></div>
-            <div><span>Department</span><strong>Computer Science & Engineering</strong></div>
-            <div><span>Campus</span><strong>Amritapuri</strong></div>
-            <div><span>Research</span><strong>ML · Thermal Imaging · Data Mining</strong></div>
-          </div>
+    <section class="section" id="research">
+      <div class="container section-grid">
+        <h2>Research</h2>
+        <div class="section-body">
+          <article class="entry">
+            <h3>Thermal image synthesis</h3>
+            <p>Thermal datasets are small. Cameras are costly, field work is slow and clinical images are hard to share. I build generative models that produce realistic thermal images from few samples.</p>
+            <p>LiquidGAN pairs a Neural ODE generator with a liquid neural network discriminator. An RK4 solver refines the latent representation, and the pair models the temperature-dependent structure of a scene. Earlier, I used DCGAN variants to augment neonatal infrared datasets and Pix2Pix to detect unmanned aerial vehicles.</p>
+            <ul class="related">
+              <li><span>2025</span><a href="https://doi.org/10.1109/ACCESS.2025.3612038" target="_blank" rel="noopener">LiquidGAN, IEEE Access</a></li>
+              <li><span>2024</span><a href="https://doi.org/10.1016/j.procs.2024.03.232" target="_blank" rel="noopener">Respiratory syndromes in DCGAN-augmented neonatal infrared datasets</a></li>
+              <li><span>2022</span><a href="https://doi.org/10.1109/ICAIS53314.2022.9742902" target="_blank" rel="noopener">Detecting unmanned aerial vehicles with Pix2Pix</a></li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <h3>Mixed pixels</h3>
+            <p>A pixel that straddles a leaf and the soil behind it reports a temperature that belongs to neither. Every measurement built on that value inherits the error. I work on finding these pixels and repairing them.</p>
+            <p>My 2026 paper in <em>Smart Agricultural Technology</em> uses an unsupervised convolutional autoencoder to flag mixed pixels and a local, context-based step to correct them. I tested the method on neonatal and agricultural imagery. With Fathima Mariya A. K., I have compared thresholding and Gaussian mixture methods, and built a framework that detects, unmixes and reconstructs.</p>
+            <ul class="related">
+              <li><span>2026</span><a href="https://doi.org/10.1016/j.atech.2026.101865" target="_blank" rel="noopener">Autoencoder detection with local correction, Smart Agricultural Technology</a></li>
+              <li><span>2026</span><a href="https://doi.org/10.1016/j.procs.2026.06.139" target="_blank" rel="noopener">Detection, unmixing and reconstruction, Procedia Computer Science</a></li>
+              <li><span>2026</span><a href="https://doi.org/10.1007/978-3-032-06668-8_14" target="_blank" rel="noopener">Thresholding and GMM methods compared</a></li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <h3>Thermal sensing for agriculture</h3>
+            <p>A plant that has water cools itself. A plant that does not, heats up. Thermal cameras read that signal. I use it to estimate the crop water stress index (CWSI) on chilli leaves and to rebuild low-resolution thermal frames. I also classify chilli leaf disease from thermal images, and rice leaf disease from thermal and RGB images together. Related work detects bruises in sapota fruit and predicts shelf life.</p>
+            <ul class="related">
+              <li><span>2026</span><a href="https://doi.org/10.1007/978-981-95-0148-9_11" target="_blank" rel="noopener">Rice leaf disease with ConvNeXt on thermal and RGB images</a></li>
+              <li><span>2025</span><a href="https://doi.org/10.1007/978-981-96-5370-6_40" target="_blank" rel="noopener">Segmenting sunlit chilli leaves for CWSI</a></li>
+              <li><span>2025</span><a href="https://doi.org/10.1007/978-981-96-5370-6_5" target="_blank" rel="noopener">Chilli leaf disease detection</a></li>
+              <li><span>2024</span><a href="https://doi.org/10.1109/ICESC60852.2024.10689781" target="_blank" rel="noopener">Low-resolution thermal reconstruction for CWSI</a></li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <h3>Thermal sensing for health and behaviour</h3>
+            <p>Skin temperature carries physiological signals. My earlier papers read them: respiratory syndromes in infants, heart rate and blood pressure from facial thermal images, facial expression and emotion, driver sobriety and deception.</p>
+            <ul class="related">
+              <li><span>2021</span><a href="https://doi.org/10.1007/978-981-33-6987-0_32" target="_blank" rel="noopener">Thermal facial expression recognition with a modified ResNet152</a></li>
+              <li><span>2021</span><a href="https://doi.org/10.1109/ICCCNT51525.2021.9579621" target="_blank" rel="noopener">Heart rate and blood pressure from facial thermal images</a></li>
+              <li><span>2020</span><a href="https://doi.org/10.1109/ICCSP48568.2020.9182148" target="_blank" rel="noopener">Emotion recognition from thermal images with YOLO</a></li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="research" class="section alt">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>Research Interests</h2>
-        </div>
-        <div class="cards">
-          <article class="card"><h3>Thermal Imaging</h3><p>Thermal image understanding, synthesis, refinement, and quality improvement.</p></article>
-          <article class="card"><h3>Generative AI</h3><p>GAN-based thermal image synthesis and high-fidelity generation under data scarcity.</p></article>
-          <article class="card"><h3>Liquid Neural Networks</h3><p>Dynamic neural models for learning subtle temporal and temperature-dependent patterns.</p></article>
-          <article class="card"><h3>Neural ODEs</h3><p>Continuous-depth modelling and ODE-based latent representation refinement.</p></article>
-          <article class="card"><h3>Precision Agriculture</h3><p>Thermal imaging and machine learning for crop monitoring and analysis.</p></article>
-          <article class="card"><h3>Data Mining & Algorithms</h3><p>Machine learning, pattern analysis, and algorithmic approaches to real-world data.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="featured" class="section">
-      <div class="container feature">
-        <div>
-          <p class="eyebrow">Featured Research</p>
-          <h2>LiquidGAN</h2>
-          <p class="feature-title">
-            Integrating Liquid Neural Networks & Neural ODEs for High-Fidelity Thermal Image
-            Synthesis under Data Scarcity
-          </p>
-          <p>
-            The research combines an ODE-based generator with a Liquid Neural Network
-            discriminator to model dynamic thermal patterns and improve synthetic thermal
-            image quality when training data are limited.
-          </p>
-          <div class="tag-row">
-            <span>GANs</span><span>Neural ODE</span><span>LNN</span><span>Thermal Imaging</span>
-          </div>
-        </div>
-        <div class="metric-card">
-          <div class="metric">RK4</div>
-          <p>ODE solver for latent representation refinement</p>
-          <div class="metric">AMP</div>
-          <p>Automatic mixed precision for efficient training</p>
+    <section class="section" id="current-work">
+      <div class="container section-grid">
+        <h2>Current work</h2>
+        <div class="section-body">
+          <dl class="now-list">
+            <div>
+              <dt>In preparation</dt>
+              <dd><strong>Adaptive thresholds for mixed pixels</strong>A fixed reconstruction-error threshold works on one crop and fails on the next. I am testing per-image thresholds (percentile, Otsu, Kapur's entropy, Gaussian mixture and median absolute deviation) on chilli, okra and paddy imagery, and comparing them with the fixed threshold from the 2026 paper.</dd>
+            </div>
+            <div>
+              <dt>Under development</dt>
+              <dd><strong>Closed-form continuous-time generators</strong>A second liquid-network GAN built on closed-form continuous-time (CfC) cells, again for thermal image synthesis.</dd>
+            </div>
+            <div>
+              <dt>Student project</dt>
+              <dd><strong>Thermal colourisation for disaster response</strong>A B.Tech team I guide is building thermal image colourisation for disaster response. They start from paired RGB and thermal drone datasets.</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section id="publications" class="section alt">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Research Output</p>
-          <h2>Selected Publications</h2>
-          <p class="section-intro">
-            Selected journal articles and research publications in thermal imaging,
-            deep learning, generative AI, and computer vision.
-          </p>
+    <section class="section" id="teaching">
+      <div class="container section-grid">
+        <h2>Teaching and supervision</h2>
+        <div class="section-body">
+          <article class="entry">
+            <h3>23CSE201 Procedural Programming in C</h3>
+            <p>I teach this course to third-semester Computer Science and Engineering students. Lab sheets are pseudocode-focused and run in order: functions and storage classes, then one-dimensional arrays and strings, then two-dimensional arrays.</p>
+            <p>Recursion gets extra time. The practice sheets carry outputs I have checked on a compiler, and they build up to multi-branch recursion. For programming contests I run a DOMjudge server on the campus intranet. It judges submissions from about 150 students.</p>
+          </article>
+          <article class="entry">
+            <h3>Projects with students</h3>
+            <p>I supervise undergraduate and postgraduate projects on thermal imaging and applied machine learning. Current open topics:</p>
+            <ul class="plain-list">
+              <li>Liquid time-constant and closed-form continuous-time networks for thermal image synthesis and refinement.</li>
+              <li>Mixed-pixel unmixing in UAV thermal imagery.</li>
+              <li>Thermal-to-RGB colourisation for disaster response.</li>
+            </ul>
+            <p>Get in touch through the details below. Tell me your background and the topic that interests you.</p>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="publication-list">
-          <article class="publication">
+    <section class="section" id="publications">
+      <div class="container section-grid">
+        <h2>Selected publications</h2>
+        <div class="section-body">
+<!-- selected:start -->
+          <article class="pub-row">
             <span class="pub-year">2026</span>
             <div>
-              <h3>Unsupervised Autoencoder Detection with a Local Context-Based Correction for Mixed Pixels in Thermal Images</h3>
-              <p><strong>S. Sarath, S. M. Sachin, E. V. Sunitha, J. J. Nair</strong></p>
-              <p><em>Smart Agricultural Technology</em>, Volume 13, 101865.</p>
-              <a class="pub-link" href="https://doi.org/10.1016/j.atech.2026.101865" target="_blank" rel="noopener">DOI →</a>
+              <h3 class="pub-title"><a href="https://doi.org/10.1016/j.procs.2026.06.139" target="_blank" rel="noopener">A Hybrid Deep Learning Framework for Detection, Unmixing, and Reconstruction of Mixed Pixels in Thermal Images</a></h3>
+              <p class="pub-authors">A. K. Fathima Mariya, <strong>S. Sarath</strong></p>
+              <p class="pub-venue"><em>Procedia Computer Science</em>, vol. 283, pp. 565–574.</p>
             </div>
           </article>
-
-          <article class="publication">
+          <article class="pub-row">
+            <span class="pub-year">2026</span>
+            <div>
+              <h3 class="pub-title"><a href="https://doi.org/10.1016/j.atech.2026.101865" target="_blank" rel="noopener">Unsupervised Autoencoder Detection with a Local Context-Based Correction for Mixed Pixels in Thermal Images</a></h3>
+              <p class="pub-authors"><strong>S. Sarath</strong>, S. M. Sachin, E. V. Sunitha, J. J. Nair</p>
+              <p class="pub-venue"><em>Smart Agricultural Technology</em>, vol. 13, article 101865.</p>
+            </div>
+          </article>
+          <article class="pub-row">
             <span class="pub-year">2025</span>
             <div>
-              <h3>LiquidGAN: Integrating Liquid Neural Networks and Neural ODEs for High-Fidelity Thermal Image Synthesis Under Data Scarcity</h3>
-              <p><strong>S. Sarath, J. J. Nair</strong></p>
-              <p><em>IEEE Access</em>, Volume 13, pp. 169758–169768.</p>
-              <a class="pub-link" href="https://doi.org/10.1109/ACCESS.2025.3612038" target="_blank" rel="noopener">DOI →</a>
+              <h3 class="pub-title"><a href="https://doi.org/10.1007/978-981-96-5370-6_40" target="_blank" rel="noopener">Deep Learning Segmentation for Measuring Crop Water Stress Index (CWSI) in Thermal Images of Sunlit Chilli Plant Leaves in Precision Agriculture</a></h3>
+              <p class="pub-authors">R. L. Krishnan, <strong>S. Sarath</strong></p>
+              <p class="pub-venue"><em>Lecture Notes in Networks and Systems</em>, vol. 1377, pp. 545–555.</p>
             </div>
           </article>
-
-          <article class="publication">
+          <article class="pub-row">
+            <span class="pub-year">2025</span>
+            <div>
+              <h3 class="pub-title"><a href="https://doi.org/10.1109/ACCESS.2025.3612038" target="_blank" rel="noopener">LiquidGAN: Integrating Liquid Neural Networks and Neural ODEs for High-Fidelity Thermal Image Synthesis Under Data Scarcity</a></h3>
+              <p class="pub-authors"><strong>S. Sarath</strong>, J. J. Nair</p>
+              <p class="pub-venue"><em>IEEE Access</em>, vol. 13, pp. 169758–169768.</p>
+            </div>
+          </article>
+          <article class="pub-row">
             <span class="pub-year">2024</span>
             <div>
-              <h3>Detection and Classification of Respiratory Syndromes in Original and Modified DCGAN Augmented Neonatal Infrared Datasets</h3>
-              <p><strong>S. Sarath, J. J. Nair</strong></p>
-              <p><em>Procedia Computer Science</em>, Volume 233, pp. 422–431.</p>
-              <a class="pub-link" href="https://doi.org/10.1016/j.procs.2024.03.232" target="_blank" rel="noopener">DOI →</a>
+              <h3 class="pub-title"><a href="https://doi.org/10.1016/j.procs.2024.03.232" target="_blank" rel="noopener">Detection and Classification of Respiratory Syndromes in Original and Modified DCGAN Augmented Neonatal Infrared Datasets</a></h3>
+              <p class="pub-authors"><strong>S. Sarath</strong>, J. J. Nair</p>
+              <p class="pub-venue"><em>Procedia Computer Science</em>, vol. 233, pp. 422–431. Cited 8 times.</p>
             </div>
           </article>
-
-          <article class="publication">
-            <span class="pub-year">2025</span>
+          <article class="pub-row">
+            <span class="pub-year">2021</span>
             <div>
-              <h3>Comparative Analysis of Thresholding and GMM-Based Methods for Mixed Pixel Identification in Thermal Images</h3>
-              <p><strong>A. K. Fathima Mariya, S. Sarath, J. J. Nair, E. V. Sunitha</strong></p>
-              <p><em>ICT Systems and Sustainability: Proceedings of ICT4SD 2025</em>, pp. 136–145. Springer.</p>
-              <a class="pub-link" href="https://doi.org/10.1007/978-3-032-06668-8_14" target="_blank" rel="noopener">DOI →</a>
+              <h3 class="pub-title"><a href="https://doi.org/10.1007/978-981-33-6987-0_32" target="_blank" rel="noopener">Thermal Facial Expression Recognition Using Modified ResNet152</a></h3>
+              <p class="pub-authors">A. K. Prabhakaran, J. J. Nair, <strong>S. Sarath</strong></p>
+              <p class="pub-venue"><em>Lecture Notes in Electrical Engineering</em>, vol. 736, pp. 389–396. Cited 22 times.</p>
             </div>
           </article>
-
-          <article class="publication">
+          <article class="pub-row">
+            <span class="pub-year">2020</span>
+            <div>
+              <h3 class="pub-title"><a href="https://doi.org/10.1109/ICCSP48568.2020.9182148" target="_blank" rel="noopener">Human Emotions Recognition from Thermal Images Using YOLO Algorithm</a></h3>
+              <p class="pub-authors">Chaitanya, <strong>S. Sarath</strong>, Malavika, Prasanna, Karthik</p>
+              <p class="pub-venue"><em>Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020</em>, article 9182148. Cited 36 times.</p>
+            </div>
+          </article>
+          <article class="pub-row">
             <span class="pub-year">2019</span>
             <div>
-              <h3>Region of Interest Based Comparative Analysis in Deception Detection Using Thermal Images</h3>
-              <p><strong>A. Ravindran, G. Gokul Krishna, Sagara, S. Sarath</strong></p>
-              <p><em>2019 2nd International Conference on Intelligent Computing, Instrumentation and Control Technologies (ICICICT)</em>.</p>
-              <a class="pub-link" href="https://doi.org/10.1109/ICICICT46008.2019.8993169" target="_blank" rel="noopener">DOI →</a>
+              <h3 class="pub-title"><a href="https://doi.org/10.1109/ICCSP.2019.8697908" target="_blank" rel="noopener">Driver Face Recognition and Sober Drunk Classification Using Thermal Images</a></h3>
+              <p class="pub-authors">S. Menon, J. Swathi, S. K. Anit, A. P. Nair, <strong>S. Sarath</strong></p>
+              <p class="pub-venue"><em>Proceedings of the 2019 IEEE International Conference on Communication and Signal Processing, ICCSP 2019</em>, article 8697908. Cited 25 times.</p>
             </div>
           </article>
-
-          <article class="publication">
-            <span class="pub-year">2018</span>
-            <div>
-              <h3>Priority Based Real Time Smart Traffic Control System Using Dynamic Background</h3>
-              <p><strong>D. L. R. Deepthi, S. Sarath</strong></p>
-              <p><em>2018 International Conference on Communication and Signal Processing (ICCSP)</em>, IEEE.</p>
-              <a class="pub-link" href="https://doi.org/10.1109/ICCSP.2018.8524501" target="_blank" rel="noopener">DOI →</a>
-            </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-year">2016</span>
-            <div>
-              <h3>Real Time Smart Traffic Control System Using Dynamic Background</h3>
-              <p><strong>S. Sarath, R. Chinnu, P. S. Gopika</strong></p>
-              <p><em>International Journal of Control Theory and Applications</em>, 9(10), pp. 4249–4255.</p>
-            </div>
-          </article>
+          <!-- selected:end -->
+          <p class="section-foot"><a href="publications.html">See all publications</a>, with search and filters.</p>
         </div>
-
-        <div class="publication-actions">
-          <a class="btn primary" href="https://scholar.google.com/citations?hl=en&user=gVkkGKgAAAAJ" target="_blank" rel="noopener">View Google Scholar</a>
-          <a class="btn secondary" href="https://orcid.org/0000-0002-3009-3119" target="_blank" rel="noopener">ORCID</a>
-          <a class="btn secondary" href="https://www.scopus.com/authid/detail.uri?authorId=57195948861" target="_blank" rel="noopener">Scopus</a>
-        </div>
-
-        <p class="note">This homepage shows selected publications. <a class="pub-link" href="publications.html">View the complete Scopus publication list →</a></p>
       </div>
     </section>
 
- 
+    <section class="section" id="contact">
+      <div class="container section-grid">
+        <h2>Contact</h2>
+        <div class="section-body">
+          <p>Department of Computer Science and Engineering, Amrita School of Computing, Amrita Vishwa Vidyapeetham, Amritapuri, Kollam, Kerala, India.</p>
+          <ul class="contact-list">
+            <li data-email hidden><span>Email</span><a href="#"></a></li>
+            <li><span>Google Scholar</span><a href="https://scholar.google.com/citations?hl=en&user=gVkkGKgAAAAJ" target="_blank" rel="noopener">Citation profile</a></li>
+            <li><span>ORCID</span><a href="https://orcid.org/0000-0002-3009-3119" target="_blank" rel="noopener">0000-0002-3009-3119</a></li>
+            <li><span>Scopus</span><a href="https://www.scopus.com/authid/detail.uri?authorId=57195948861" target="_blank" rel="noopener">Author ID 57195948861</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>&copy; <span data-current-year></span> Dr. Sarath S</span>
+      <span>Amrita Vishwa Vidyapeetham, Amritapuri</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="thermal.js"></script>
+</body>
+</html>
