@@ -641,29 +641,53 @@
 
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
+
 const search = document.getElementById("search");
-const year = document.getElementById("yearFilter");
+const yearFilter = document.getElementById("yearFilter");
 const type = document.getElementById("type");
+
 const cards = [...document.querySelectorAll(".pub-card")];
 const noResults = document.getElementById("noResults");
 
 function filterPublications() {
-  const q = search.value.toLowerCase().trim();
-  const y = year.value;
-  const t = type.value;
-  let visible = 0;
-  cards.forEach(card => {
-    const matchesQ = !q || card.dataset.text.toLowerCase().includes(q);
-    const matchesY = !y || card.dataset.year === y;
-    const matchesT = !t || card.dataset.type === t;
-    const show = matchesQ && matchesY && matchesT;
-    card.style.display = show ? "" : "none";
-    if (show) visible++;
-  });
-  noResults.style.display = visible ? "none" : "block";
+
+    const searchText = search.value.toLowerCase().trim();
+    const selectedYear = yearFilter.value;
+    const selectedType = type.value;
+
+    let visible = 0;
+
+    cards.forEach(card => {
+
+        const text = card.dataset.text.toLowerCase();
+        const cardYear = card.dataset.year;
+        const cardType = card.dataset.type;
+
+        const matchesSearch =
+            searchText === "" || text.includes(searchText);
+
+        const matchesYear =
+            selectedYear === "" || cardYear === selectedYear;
+
+        const matchesType =
+            selectedType === "" || cardType === selectedType;
+
+        if (matchesSearch && matchesYear && matchesType) {
+            card.style.display = "";
+            visible++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    noResults.style.display = visible === 0 ? "block" : "none";
 }
-[search, year, type].forEach(el => el.addEventListener("input", filterPublications));
-[search, year, type].forEach(el => el.addEventListener("change", filterPublications));
+
+search.addEventListener("input", filterPublications);
+yearFilter.addEventListener("change", filterPublications);
+type.addEventListener("change", filterPublications);
+
+filterPublications();
 </script>
 </body>
 </html>
