@@ -2,7 +2,7 @@
 
 // Optional: put your email address between the quotes to show it in the Contact section
 // and the publications footer. Leave it empty to hide the email line.
-const EMAIL = "";
+const EMAIL = "thermalafterphd@gmail.com";
 
 document.querySelectorAll("[data-current-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
