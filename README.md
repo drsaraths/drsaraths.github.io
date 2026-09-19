@@ -12,6 +12,7 @@ Plain HTML, CSS and JavaScript. No framework and no build step is needed to host
 | `publications.html` | Full publication list with search, year and type filters (generated) |
 | `data/publications.json` | The 38 Scopus records, cleaned. This is the source for the publication list |
 | `tools/build.py` | Rebuilds `publications.html` and the selected list on `index.html` from the JSON |
+| `images/profile.jpg`, `images/hero-thermal.jpg` | Your portrait and a thermal image for the home page (add these files; see `images/README.md`) |
 | `style.css`, `script.js`, `thermal.js`, `publications.js` | Styles and behaviour |
 | `404.html`, `robots.txt`, `sitemap.xml`, `favicon.svg`, `.nojekyll` | Hosting and search-engine files |
 

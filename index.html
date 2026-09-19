@@ -59,8 +59,13 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div>
-          <h1>Dr. Sarath S</h1>
-          <p class="role">Assistant Professor (Sr. Gr.), Department of Computer Science and Engineering, Amrita School of Computing, Amrita Vishwa Vidyapeetham, Amritapuri</p>
+          <div class="identity">
+            <img class="profile-photo" id="profile-img" alt="Portrait of Dr. Sarath S" width="240" height="240" hidden>
+            <div>
+              <h1>Dr. Sarath S</h1>
+              <p class="role">Assistant Professor (Sr. Gr.), Department of Computer Science and Engineering, Amrita School of Computing, Amrita Vishwa Vidyapeetham, Amritapuri</p>
+            </div>
+          </div>
           <p class="lead">I study how thermal cameras see, and where they get it wrong.</p>
           <p class="hero-text">My research covers thermal image synthesis, the detection and correction of mixed pixels, and thermal sensing for agriculture and health.</p>
           <div class="hero-actions">
@@ -70,7 +75,12 @@
           </div>
         </div>
 
-        <figure class="viewport" aria-labelledby="vp-title">
+        <figure class="hero-media" id="hero-image-figure" hidden>
+          <img id="hero-img" alt="Thermal image from my research. Edit this description in index.html." width="1200" height="800">
+          <figcaption>Thermal image from my research. Edit this caption in index.html.</figcaption>
+        </figure>
+
+        <figure class="viewport" id="demo-figure" aria-labelledby="vp-title">
           <div class="vp-bar">
             <span class="vp-title" id="vp-title">A leaf as a thermal camera sees it</span>
             <div class="segmented" role="group" aria-label="View">
@@ -117,6 +127,7 @@
             <h3>Mixed pixels</h3>
             <p>A pixel that straddles a leaf and the soil behind it reports a temperature that belongs to neither. Every measurement built on that value inherits the error. I work on finding these pixels and repairing them.</p>
             <p>My 2026 paper in <em>Smart Agricultural Technology</em> uses an unsupervised convolutional autoencoder to flag mixed pixels and a local, context-based step to correct them. I tested the method on neonatal and agricultural imagery. With Fathima Mariya A. K., I have compared thresholding and Gaussian mixture methods, and built a framework that detects, unmixes and reconstructs.</p>
+            <div id="demo-slot"></div>
             <ul class="related">
               <li><span>2026</span><a href="https://doi.org/10.1016/j.atech.2026.101865" target="_blank" rel="noopener">Autoencoder detection with local correction, Smart Agricultural Technology</a></li>
               <li><span>2026</span><a href="https://doi.org/10.1016/j.procs.2026.06.139" target="_blank" rel="noopener">Detection, unmixing and reconstruction, Procedia Computer Science</a></li>

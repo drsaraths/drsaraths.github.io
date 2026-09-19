@@ -66,8 +66,10 @@ p { margin: 0 0 1em; }
 /* Hero */
 .hero { padding: 76px 0 88px; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: center; }
-.hero h1 { font-size: clamp(3rem, 6.4vw, 5.2rem); line-height: 1; letter-spacing: -0.025em; font-weight: 500; margin-bottom: 14px; }
-.role { color: var(--muted); font-size: 1rem; margin-bottom: 32px; max-width: 34em; }
+.hero h1 { font-size: clamp(2.3rem, 4.4vw, 3.4rem); line-height: 1.05; letter-spacing: -0.02em; font-weight: 500; margin-bottom: 8px; }
+.identity { display: flex; align-items: center; gap: 24px; margin-bottom: 34px; }
+.profile-photo { flex: none; width: 116px; height: 116px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 3px solid var(--paper); box-shadow: 0 0 0 1px var(--line), 0 8px 24px rgba(20, 11, 20, .12); background: var(--line); }
+.role { color: var(--muted); font-size: .98rem; margin: 0; max-width: 32em; }
 .lead { font-family: var(--serif); font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 18px; max-width: 20em; }
 .hero-text { color: var(--muted); max-width: 33em; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; margin-top: 28px; }
@@ -77,6 +79,12 @@ p { margin: 0 0 1em; }
 }
 .btn:hover { background: var(--maroon-dark); border-color: var(--maroon-dark); color: #fff; }
 .text-link { font-weight: 600; font-size: .95rem; }
+
+/* Hero image */
+.hero-media { margin: 0; }
+.hero-media img { display: block; width: 100%; height: auto; max-height: 540px; object-fit: cover; border-radius: 8px; box-shadow: 0 20px 50px rgba(20, 11, 20, .18); background: #140b14; }
+.hero-media figcaption { margin-top: 10px; font-size: .85rem; color: var(--muted); }
+#demo-slot .viewport { max-width: 34rem; margin: 6px 0 26px; }
 
 /* Thermal viewport */
 .viewport { margin: 0; background: var(--panel); color: #efe6ee; border-radius: 8px; padding: 14px 14px 12px; box-shadow: 0 20px 50px rgba(20, 11, 20, .18); }
@@ -193,6 +201,8 @@ footer { border-top: 1px solid var(--line); padding: 26px 0 34px; font-size: .88
   .filters { position: static; }
 }
 @media (max-width: 720px) {
+  .profile-photo { width: 84px; height: 84px; }
+  .identity { gap: 16px; }
   .menu-toggle { display: inline-block; }
   .nav-links {
     display: none; position: absolute; top: var(--header-h); left: 0; right: 0;
