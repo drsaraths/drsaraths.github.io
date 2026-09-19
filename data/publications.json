@@ -1,0 +1,642 @@
+[
+ {
+  "year": 2026,
+  "type": "Conference paper",
+  "title": "A Hybrid Deep Learning Framework for Detection, Unmixing, and Reconstruction of Mixed Pixels in Thermal Images",
+  "authors": [
+   "A. K. Fathima Mariya",
+   "S. Sarath"
+  ],
+  "venue": "Procedia Computer Science",
+  "detail": "vol. 283, pp. 565–574",
+  "cites": 0,
+  "doi": "10.1016/j.procs.2026.06.139",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105046068459&doi=10.1016%2fj.procs.2026.06.139&partnerID=40&md5=c1825c442a57f72081654187b2b997af",
+  "selected": true
+ },
+ {
+  "year": 2026,
+  "type": "Conference paper",
+  "title": "Comparative Analysis of Thresholding and GMM-Based Methods for Mixed Pixel Identification in Thermal Images",
+  "authors": [
+   "A. K. Fathima Mariya",
+   "S. Sarath",
+   "J. J. Nair",
+   "E. V. Sunitha"
+  ],
+  "venue": "Lecture Notes in Networks and Systems",
+  "detail": "vol. 1647, pp. 136–145",
+  "cites": 0,
+  "doi": "10.1007/978-3-032-06668-8_14",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105023411101&doi=10.1007%2f978-3-032-06668-8_14&partnerID=40&md5=c5e24df00d964f234c4f54bd315787ba",
+  "selected": false
+ },
+ {
+  "year": 2026,
+  "type": "Conference paper",
+  "title": "Enhanced Rice Leaf Disease Classification and Estimation Via ConvNeXT Incorporating Thermal and RGB Images",
+  "authors": [
+   "M. Gokul Raja",
+   "S. Sarath"
+  ],
+  "venue": "Lecture Notes in Electrical Engineering",
+  "detail": "vol. 1464, pp. 135–146",
+  "cites": 0,
+  "doi": "10.1007/978-981-95-0148-9_11",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105034832006&doi=10.1007%2f978-981-95-0148-9_11&partnerID=40&md5=6b27370ea7ca8d42e927d405a7068590",
+  "selected": false
+ },
+ {
+  "year": 2026,
+  "type": "Conference paper",
+  "title": "Impact of Data Preprocessing Techniques on Machine Learning Algorithms Using Cardiovascular Disease Datasets",
+  "authors": [
+   "V. S. Krishna",
+   "G. Krishna",
+   "A. Abhai",
+   "A. Krishnan",
+   "S. Sarath"
+  ],
+  "venue": "Proceedings of 4th International Conference on Self Sustainable Artificial Intelligence Systems, ICSSAS 2026",
+  "detail": "pp. 1794–1801",
+  "cites": 0,
+  "doi": "10.1109/ICSSAS68835.2026.11559521",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105044201096&doi=10.1109%2fICSSAS68835.2026.11559521&partnerID=40&md5=d332c949138e1eab8fafc4177bad20a6",
+  "selected": false
+ },
+ {
+  "year": 2026,
+  "type": "Journal article",
+  "title": "Unsupervised Autoencoder Detection with a Local Context-Based Correction for Mixed Pixels in Thermal Images",
+  "authors": [
+   "S. Sarath",
+   "S. M. Sachin",
+   "E. V. Sunitha",
+   "J. J. Nair"
+  ],
+  "venue": "Smart Agricultural Technology",
+  "detail": "vol. 13, article 101865",
+  "cites": 1,
+  "doi": "10.1016/j.atech.2026.101865",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105034189853&doi=10.1016%2fj.atech.2026.101865&partnerID=40&md5=0d259fff645ab8f68b9c832862a4048d",
+  "selected": true
+ },
+ {
+  "year": 2025,
+  "type": "Conference paper",
+  "title": "Algorithmic-Symphony: Machine Learning Classification Models Across Diverse Datasets for Performance Evaluation and Comparison",
+  "authors": [
+   "S. Adithya Krishna",
+   "R. Sreeram",
+   "A. Rauniyar",
+   "B. M. Reddy",
+   "S. Sarath"
+  ],
+  "venue": "Lecture Notes in Networks and Systems",
+  "detail": "vol. 1319, pp. 53–67",
+  "cites": 0,
+  "doi": "10.1007/978-981-96-4145-1_5",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105014417843&doi=10.1007%2f978-981-96-4145-1_5&partnerID=40&md5=8ef291baed5f687270f9487672fccd54",
+  "selected": false
+ },
+ {
+  "year": 2025,
+  "type": "Conference paper",
+  "title": "Autonomous Intra Campus Navigation System",
+  "authors": [
+   "K. Kabil Pranav",
+   "G. Pirai Soodan",
+   "S. Sarath",
+   "D. Yathis Kumar",
+   "K. P. Peeyush"
+  ],
+  "venue": "4th IEEE North Karnataka Subsection Flagship International Conference: Holistic Engineering for Sustainable Development, NKCon 2025",
+  "detail": "",
+  "cites": 1,
+  "doi": "10.1109/NKCon66957.2025.11345803",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105033087092&doi=10.1109%2fNKCon66957.2025.11345803&partnerID=40&md5=7b1bce6ea22029af64dacd188a98c6c5",
+  "selected": false
+ },
+ {
+  "year": 2025,
+  "type": "Conference paper",
+  "title": "Chili Leaves Disease Detection Using Thermal Images and Deep Learning Classification",
+  "authors": [
+   "S. N. V. V. S. G. Tadavarthy",
+   "C. J. R. Eddula",
+   "R. C. Bollepalli",
+   "A. V. Datla",
+   "S. Sarath"
+  ],
+  "venue": "Lecture Notes in Networks and Systems",
+  "detail": "vol. 1377, pp. 57–72",
+  "cites": 0,
+  "doi": "10.1007/978-981-96-5370-6_5",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105018800264&doi=10.1007%2f978-981-96-5370-6_5&partnerID=40&md5=9899303ca1d5d4b03c3aaea037e7d42a",
+  "selected": false
+ },
+ {
+  "year": 2025,
+  "type": "Conference paper",
+  "title": "Clustering-Based Linear Regression",
+  "authors": [
+   "M. Ayush",
+   "B. M. Gopal",
+   "P. S. Pillai",
+   "P. S. Kumar",
+   "S. Sarath"
+  ],
+  "venue": "Lecture Notes in Networks and Systems",
+  "detail": "vol. 1383, pp. 235–246",
+  "cites": 0,
+  "doi": "10.1007/978-981-96-5754-4_21",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105015300433&doi=10.1007%2f978-981-96-5754-4_21&partnerID=40&md5=c134fc2d434c128c31b95dfd2f457a25",
+  "selected": false
+ },
+ {
+  "year": 2025,
+  "type": "Conference paper",
+  "title": "Comparative Analysis of Machine Learning Models in Autism Spectrum Disorder Identification",
+  "authors": [
+   "C. Kondru",
+   "A. Jayakumar",
+   "S. Sarath"
+  ],
+  "venue": "Lecture Notes in Networks and Systems",
+  "detail": "vol. 1159, pp. 285–297",
+  "cites": 0,
+  "doi": "10.1007/978-981-97-8526-1_22",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105003857624&doi=10.1007%2f978-981-97-8526-1_22&partnerID=40&md5=5c26c5e62d32d257d1ae74e29a1b07d1",
+  "selected": false
+ },
+ {
+  "year": 2025,
+  "type": "Conference paper",
+  "title": "Deep Learning Segmentation for Measuring Crop Water Stress Index (CWSI) in Thermal Images of Sunlit Chilli Plant Leaves in Precision Agriculture",
+  "authors": [
+   "R. L. Krishnan",
+   "S. Sarath"
+  ],
+  "venue": "Lecture Notes in Networks and Systems",
+  "detail": "vol. 1377, pp. 545–555",
+  "cites": 0,
+  "doi": "10.1007/978-981-96-5370-6_40",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105018795945&doi=10.1007%2f978-981-96-5370-6_40&partnerID=40&md5=1e87ae010f071366e2c645f0a6b07466",
+  "selected": true
+ },
+ {
+  "year": 2025,
+  "type": "Journal article",
+  "title": "LiquidGAN: Integrating Liquid Neural Networks and Neural ODEs for High-Fidelity Thermal Image Synthesis Under Data Scarcity",
+  "authors": [
+   "S. Sarath",
+   "J. J. Nair"
+  ],
+  "venue": "IEEE Access",
+  "detail": "vol. 13, pp. 169758–169768",
+  "cites": 1,
+  "doi": "10.1109/ACCESS.2025.3612038",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-105016737962&doi=10.1109%2fACCESS.2025.3612038&partnerID=40&md5=776dddb08d6fea3c997fa12c99905dd6",
+  "selected": true
+ },
+ {
+  "year": 2024,
+  "type": "Conference paper",
+  "title": "A Detailed Analysis of Machine Learning Models to Predict Water Potability",
+  "authors": [
+   "V. Sreekumar",
+   "F. Ihsan",
+   "S. Reghuram",
+   "S. Sarath"
+  ],
+  "venue": "2024 15th International Conference on Computing Communication and Networking Technologies, ICCCNT 2024",
+  "detail": "",
+  "cites": 1,
+  "doi": "10.1109/ICCCNT61001.2024.10725826",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85213043366&doi=10.1109%2fICCCNT61001.2024.10725826&partnerID=40&md5=9c1973bf16a8711d1dac82dec6a15c7c",
+  "selected": false
+ },
+ {
+  "year": 2024,
+  "type": "Conference paper",
+  "title": "An Extensive Analysis of ML Techniques for Predicting and Analysing Medical Data",
+  "authors": [
+   "A. Rajan",
+   "M. Manoj",
+   "G. Santhosh",
+   "S. Sarath"
+  ],
+  "venue": "5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings",
+  "detail": "pp. 1114–1120",
+  "cites": 9,
+  "doi": "10.1109/ICESC60852.2024.10689815",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85206640315&doi=10.1109%2fICESC60852.2024.10689815&partnerID=40&md5=908dcf01c2c9964fb449bd39b6c491bf",
+  "selected": false
+ },
+ {
+  "year": 2024,
+  "type": "Conference paper",
+  "title": "Deep Learning-Driven Low-Resolution Thermal Image Reconstruction for Enhanced CWSI Analysis",
+  "authors": [
+   "A. T. George",
+   "D. M. Deepak",
+   "G. P. Kunnath",
+   "G. P. Devi",
+   "S. Sarath"
+  ],
+  "venue": "5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings",
+  "detail": "pp. 1571–1576",
+  "cites": 4,
+  "doi": "10.1109/ICESC60852.2024.10689781",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85206692523&doi=10.1109%2fICESC60852.2024.10689781&partnerID=40&md5=e6c47785bd43ea98741a92812e25c974",
+  "selected": false
+ },
+ {
+  "year": 2024,
+  "type": "Conference paper",
+  "title": "Detection and Classification of Respiratory Syndromes in Original and Modified DCGAN Augmented Neonatal Infrared Datasets",
+  "authors": [
+   "S. Sarath",
+   "J. J. Nair"
+  ],
+  "venue": "Procedia Computer Science",
+  "detail": "vol. 233, pp. 422–431",
+  "cites": 8,
+  "doi": "10.1016/j.procs.2024.03.232",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85192451465&doi=10.1016%2fj.procs.2024.03.232&partnerID=40&md5=820b916a53d20e63299e6fb9f9640c81",
+  "selected": true
+ },
+ {
+  "year": 2024,
+  "type": "Conference paper",
+  "title": "Heart Failure Prediction Using Machine Learning Techniques: A Comparative Analysis",
+  "authors": [
+   "Rithish",
+   "S. Krishnendu",
+   "S. Sarath",
+   "S. Niveditha",
+   "B. M. S. Sai"
+  ],
+  "venue": "2024 15th International Conference on Computing Communication and Networking Technologies, ICCCNT 2024",
+  "detail": "",
+  "cites": 1,
+  "doi": "10.1109/ICCCNT61001.2024.10724418",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85211109742&doi=10.1109%2fICCCNT61001.2024.10724418&partnerID=40&md5=9f64785712d9a400a7447587f72ed535",
+  "selected": false
+ },
+ {
+  "year": 2024,
+  "type": "Conference paper",
+  "title": "Sapota Quality: Bruise Detection and Shelf Life Prediction",
+  "authors": [
+   "M. Raviteja",
+   "V. V. V. K. Reddy",
+   "S. Aqibuddin",
+   "M. T. Soppa",
+   "S. Sarath"
+  ],
+  "venue": "5th International Conference on Electronics and Sustainable Communication Systems, ICESC 2024 - Proceedings",
+  "detail": "pp. 1469–1474",
+  "cites": 4,
+  "doi": "10.1109/ICESC60852.2024.10689849",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85206628810&doi=10.1109%2fICESC60852.2024.10689849&partnerID=40&md5=f9cec2c130abc6e606c4ebca4f16e781",
+  "selected": false
+ },
+ {
+  "year": 2023,
+  "type": "Conference paper",
+  "title": "Comparative Study of Skin Lesion Classification Using Dermoscopic Images",
+  "authors": [
+   "P. P. Pranav",
+   "S. Sarath"
+  ],
+  "venue": "2023 14th International Conference on Computing Communication and Networking Technologies, ICCCNT 2023",
+  "detail": "",
+  "cites": 10,
+  "doi": "10.1109/ICCCNT56998.2023.10307324",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85179851519&doi=10.1109%2fICCCNT56998.2023.10307324&partnerID=40&md5=dfe9ce798271d408a41d1b6e36a149f4",
+  "selected": false
+ },
+ {
+  "year": 2022,
+  "type": "Conference paper",
+  "title": "A Deep Learning Approach for Detection and Analysis of Respiratory Infections in Covid-19 Patients Using RGB and Infrared Images.",
+  "authors": [
+   "B. Avuthu",
+   "N. Yenuganti",
+   "S. Kasikala",
+   "A. Viswanath",
+   "Sarath"
+  ],
+  "venue": "ACM International Conference Proceeding Series",
+  "detail": "pp. 367–371",
+  "cites": 5,
+  "doi": "10.1145/3549206.3549272",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85141150046&doi=10.1145%2f3549206.3549272&partnerID=40&md5=6b9e112c4dafda17e9849e7e3db84931",
+  "selected": false
+ },
+ {
+  "year": 2022,
+  "type": "Conference paper",
+  "title": "A Novel Approach to Detect Unmanned Aerial Vehicle Using Pix2Pix Generative Adversarial Network",
+  "authors": [
+   "V. Balachandran",
+   "S. Sarath"
+  ],
+  "venue": "Proceedings of the 2nd International Conference on Artificial Intelligence and Smart Energy, ICAIS 2022",
+  "detail": "pp. 1368–1373",
+  "cites": 11,
+  "doi": "10.1109/ICAIS53314.2022.9742902",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85128236203&doi=10.1109%2fICAIS53314.2022.9742902&partnerID=40&md5=55b301046143c8e89b9a77d48d447890",
+  "selected": false
+ },
+ {
+  "year": 2021,
+  "type": "Conference paper",
+  "title": "Data Augmentation of Neonatal Thermal Images Using Deep Learning",
+  "authors": [
+   "K. G. V. S. Karthik",
+   "K. Nithin",
+   "B. Dhanush",
+   "K. Praveen",
+   "S. Sarath"
+  ],
+  "venue": "2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021",
+  "detail": "",
+  "cites": 8,
+  "doi": "10.1109/ICCCNT51525.2021.9579769",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85126240752&doi=10.1109%2fICCCNT51525.2021.9579769&partnerID=40&md5=21b6ea91d1235ed6a89d7e7e98fec087",
+  "selected": false
+ },
+ {
+  "year": 2021,
+  "type": "Conference paper",
+  "title": "Illumination Invariant Non-Invasive Heart Rate and Blood Pressure Estimation from Facial Thermal Images Using Deep Learning",
+  "authors": [
+   "K. S. Nair",
+   "S. Sarath"
+  ],
+  "venue": "2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021",
+  "detail": "",
+  "cites": 6,
+  "doi": "10.1109/ICCCNT51525.2021.9579621",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85126190537&doi=10.1109%2fICCCNT51525.2021.9579621&partnerID=40&md5=0f32cdddca26b41ec0331a040ee0ddac",
+  "selected": false
+ },
+ {
+  "year": 2021,
+  "type": "Conference paper",
+  "title": "Non-Invasive Machine Learning Approach for Classifying Blood Pressure Using PPG Signals in COVID Situation",
+  "authors": [
+   "B. Durga Siva Praveen",
+   "D. V. N. Sandeep",
+   "I. V. V. Raghavendra",
+   "M. Yuvaraj",
+   "S. Sarath"
+  ],
+  "venue": "2021 12th International Conference on Computing Communication and Networking Technologies, ICCCNT 2021",
+  "detail": "",
+  "cites": 9,
+  "doi": "10.1109/ICCCNT51525.2021.9579535",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85126189953&doi=10.1109%2fICCCNT51525.2021.9579535&partnerID=40&md5=edacdef57d9f2bbb4075540fa8f9a210",
+  "selected": false
+ },
+ {
+  "year": 2021,
+  "type": "Conference paper",
+  "title": "Thermal Facial Expression Recognition Using Modified ResNet152",
+  "authors": [
+   "A. K. Prabhakaran",
+   "J. J. Nair",
+   "S. Sarath"
+  ],
+  "venue": "Lecture Notes in Electrical Engineering",
+  "detail": "vol. 736, pp. 389–396",
+  "cites": 22,
+  "doi": "10.1007/978-981-33-6987-0_32",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85111153659&doi=10.1007%2f978-981-33-6987-0_32&partnerID=40&md5=1564efff2175cc01421266e3e703aab5",
+  "selected": true
+ },
+ {
+  "year": 2020,
+  "type": "Conference paper",
+  "title": "A Deep-Learning Approach to Find Respiratory Syndromes in Infants Using Thermal Imaging",
+  "authors": [
+   "S. Navaneeth",
+   "S. Sarath",
+   "B. Amba Nair",
+   "K. Harikrishnan",
+   "P. Prajal"
+  ],
+  "venue": "Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020",
+  "detail": "article 9182231",
+  "cites": 16,
+  "doi": "10.1109/ICCSP48568.2020.9182231",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091333272&doi=10.1109%2fICCSP48568.2020.9182231&partnerID=40&md5=332bbbedc4cbf198c4c0c922a16313f4",
+  "selected": false
+ },
+ {
+  "year": 2020,
+  "type": "Conference paper",
+  "title": "Conference Room Booking Application Using Flutter",
+  "authors": [
+   "A. Praveen",
+   "K. Nanda",
+   "N. Rajith",
+   "N. Giriraj",
+   "R. Radhika",
+   "N. Mahesh",
+   "K. Vishnu",
+   "T. Anjali",
+   "S. Sarath"
+  ],
+  "venue": "Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020",
+  "detail": "article 9182183",
+  "cites": 17,
+  "doi": "10.1109/ICCSP48568.2020.9182183",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091328840&doi=10.1109%2fICCSP48568.2020.9182183&partnerID=40&md5=86aa72e8666514d62913e16ad0f4f3d6",
+  "selected": false
+ },
+ {
+  "year": 2020,
+  "type": "Conference paper",
+  "title": "Human Emotions Recognition from Thermal Images Using YOLO Algorithm",
+  "authors": [
+   "Chaitanya",
+   "S. Sarath",
+   "Malavika",
+   "Prasanna",
+   "Karthik"
+  ],
+  "venue": "Proceedings of the 2020 IEEE International Conference on Communication and Signal Processing, ICCSP 2020",
+  "detail": "article 9182148",
+  "cites": 36,
+  "doi": "10.1109/ICCSP48568.2020.9182148",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091333619&doi=10.1109%2fICCSP48568.2020.9182148&partnerID=40&md5=79773a73a1ef0e885ca4851ad6c2cb92",
+  "selected": true
+ },
+ {
+  "year": 2020,
+  "type": "Conference paper",
+  "title": "Visual Question Answering Models Evaluation",
+  "authors": [
+   "S. Sarath",
+   "J. Amudha"
+  ],
+  "venue": "2020 International Conference for Emerging Technology, INCET 2020",
+  "detail": "article 9154094",
+  "cites": 8,
+  "doi": "10.1109/INCET49848.2020.9154094",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85090596524&doi=10.1109%2fINCET49848.2020.9154094&partnerID=40&md5=269e9dc58ef6e360da71bae2868ec025",
+  "selected": false
+ },
+ {
+  "year": 2019,
+  "type": "Conference paper",
+  "title": "A Comparative Analysis of Machine Learning Algorithms in Detecting Deceptive Behaviour in Humans Using Thermal Images",
+  "authors": [
+   "A. Ravindran",
+   "G. Gokul Krishna",
+   "Sagara",
+   "S. Sarath"
+  ],
+  "venue": "Proceedings of the 2019 IEEE International Conference on Communication and Signal Processing, ICCSP 2019",
+  "detail": "article 8697911",
+  "cites": 15,
+  "doi": "10.1109/ICCSP.2019.8697911",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065590610&doi=10.1109%2fICCSP.2019.8697911&partnerID=40&md5=6f0e978858f5878eb1741294986814be",
+  "selected": false
+ },
+ {
+  "year": 2019,
+  "type": "Conference paper",
+  "title": "Driver Face Recognition and Sober Drunk Classification Using Thermal Images",
+  "authors": [
+   "S. Menon",
+   "J. Swathi",
+   "S. K. Anit",
+   "A. P. Nair",
+   "S. Sarath"
+  ],
+  "venue": "Proceedings of the 2019 IEEE International Conference on Communication and Signal Processing, ICCSP 2019",
+  "detail": "article 8697908",
+  "cites": 25,
+  "doi": "10.1109/ICCSP.2019.8697908",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85065591540&doi=10.1109%2fICCSP.2019.8697908&partnerID=40&md5=79bcfb9eb3e3b29f28034bdf4a9ab0e6",
+  "selected": true
+ },
+ {
+  "year": 2019,
+  "type": "Conference paper",
+  "title": "Numerical Studies on Flow Past Top Surface Cooled Circular Cylinder at Low Reynolds Number",
+  "authors": [
+   "S. Stephen",
+   "S. Ajith Kumar",
+   "S. Sarath"
+  ],
+  "venue": "Materials Today: Proceedings",
+  "detail": "vol. 46, pp. 4653–4658",
+  "cites": 0,
+  "doi": "10.1016/j.matpr.2020.10.289",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85113780169&doi=10.1016%2fj.matpr.2020.10.289&partnerID=40&md5=02cd1af56b0dff07e8929bd61a0456c5",
+  "selected": false
+ },
+ {
+  "year": 2019,
+  "type": "Conference paper",
+  "title": "Region of Interest Based Comparative Analysis in Deception Detection Using Thermal Images",
+  "authors": [
+   "A. Ravindran",
+   "G. G. Krishna",
+   "Sagara",
+   "S. Sarath"
+  ],
+  "venue": "2019 2nd International Conference on Intelligent Computing, Instrumentation and Control Technologies, ICICICT 2019",
+  "detail": "article 8993169",
+  "cites": 4,
+  "doi": "10.1109/ICICICT46008.2019.8993169",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85080109199&doi=10.1109%2fICICICT46008.2019.8993169&partnerID=40&md5=68d9227103001372dbe7583749f40feb",
+  "selected": false
+ },
+ {
+  "year": 2018,
+  "type": "Conference paper",
+  "title": "Priority Based Real Time Smart Traffic Control System Using Dynamic Background",
+  "authors": [
+   "S. Sarath",
+   "L. R. Deepthi"
+  ],
+  "venue": "Proceedings of the 2018 IEEE International Conference on Communication and Signal Processing, ICCSP 2018",
+  "detail": "article 8524501",
+  "cites": 13,
+  "doi": "10.1109/ICCSP.2018.8524501",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85057750318&doi=10.1109%2fICCSP.2018.8524501&partnerID=40&md5=c69efd61f6e835188e445f1aaa3df278",
+  "selected": false
+ },
+ {
+  "year": 2018,
+  "type": "Conference paper",
+  "title": "Real-Time Video Segmentation Using a Single Click",
+  "authors": [
+   "S. Sarath",
+   "A. M. Anamika"
+  ],
+  "venue": "Proceedings of the 2018 IEEE International Conference on Communication and Signal Processing, ICCSP 2018",
+  "detail": "article 8524479",
+  "cites": 5,
+  "doi": "10.1109/ICCSP.2018.8524479",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85057750734&doi=10.1109%2fICCSP.2018.8524479&partnerID=40&md5=c0de0ace5809a0019126f0b2b1cabe7e",
+  "selected": false
+ },
+ {
+  "year": 2017,
+  "type": "Conference paper",
+  "title": "Effect of Tip Clearance on Wall Shear Stress of an Axial LVAD",
+  "authors": [
+   "S. Sarath",
+   "R. Vikas"
+  ],
+  "venue": "IOP Conference Series: Materials Science and Engineering",
+  "detail": "vol. 243, no. 1, article 12010",
+  "cites": 1,
+  "doi": "10.1088/1757-899X/243/1/012010",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-85034108276&doi=10.1088%2f1757-899X%2f243%2f1%2f012010&partnerID=40&md5=aa6440f967bb74880b537debe3e11cdc",
+  "selected": false
+ },
+ {
+  "year": 2016,
+  "type": "Journal article",
+  "title": "Real-Time Smart Traffic Control System Using Dynamic Background",
+  "authors": [
+   "S. Sarath",
+   "R. Chinnu",
+   "P. S. Gopika"
+  ],
+  "venue": "International Journal of Control Theory and Applications",
+  "detail": "vol. 9, no. 10, pp. 4249–4255",
+  "cites": 8,
+  "doi": "",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-84989235087&partnerID=40&md5=518b7db9651ba0132d4bfe8e24a87928",
+  "selected": false
+ },
+ {
+  "year": 2015,
+  "type": "Journal article",
+  "title": "Generalization of Crossfilter.js for Amrita Dynamic Dashboard",
+  "authors": [
+   "J. A. James",
+   "S. Karthika",
+   "S. K. K. Keerthana",
+   "P. K. Reshma",
+   "S. Sarath",
+   "S. Sathyadevan",
+   "S. Hariram"
+  ],
+  "venue": "International Journal of Applied Engineering Research",
+  "detail": "vol. 10, no. 13",
+  "cites": 0,
+  "doi": "",
+  "scopus": "https://www.scopus.com/inward/record.uri?eid=2-s2.0-84940179319&partnerID=40&md5=ce98e583e499232f56219b5a24f4de22",
+  "selected": false
+ }
+]
