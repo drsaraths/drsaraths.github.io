@@ -4,8 +4,8 @@
 // Fill in both parts of your address, for example USER = "name" and DOMAIN = "am.amrita.edu".
 // The address is joined only when a visitor clicks "Send me an email". While either part
 // is empty, the email line stays hidden.
-const EMAIL_USER = "saraths";
-const EMAIL_DOMAIN = "am.amrita.edu";
+const EMAIL_USER = "thermalresearch18";
+const EMAIL_DOMAIN = "gmail.com";
 
 document.querySelectorAll("[data-current-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
