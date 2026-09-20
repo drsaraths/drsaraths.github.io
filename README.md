@@ -29,9 +29,9 @@ Plain HTML, CSS and JavaScript. No framework and no build step is needed to host
 3. Replace `https://drsaraths.github.io/` with your domain in `index.html` (canonical link, `og:url`, JSON-LD), `publications.html` (canonical link, generated from `tools/build.py`), `robots.txt` and `sitemap.xml`.
 4. Turn on Enforce HTTPS once the certificate is ready.
 
-## Show an email address
+## Add your email (hidden from the page)
 
-Open `script.js` and put your address in `EMAIL` on line 5. The Contact section shows it once it is set. While the value is empty, the email line stays hidden.
+Open `script.js` and fill in `EMAIL_USER` (the part before the @) and `EMAIL_DOMAIN` (the part after it). The Contact section then shows a "Send me an email" button. The address never appears on the page. It is joined only when someone clicks. While either value is empty, the button stays hidden.
 
 ## Update the publications
 

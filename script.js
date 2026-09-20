@@ -1,8 +1,11 @@
 // Shared behaviour for every page.
 
-// Optional: put your email address between the quotes to show it in the Contact section
-// and the publications footer. Leave it empty to hide the email line.
-const EMAIL = "";
+// Contact by email without printing the address on the page.
+// Fill in both parts of your address, for example USER = "name" and DOMAIN = "am.amrita.edu".
+// The address is joined only when a visitor clicks "Send me an email". While either part
+// is empty, the email line stays hidden.
+const EMAIL_USER = "";
+const EMAIL_DOMAIN = "";
 
 document.querySelectorAll("[data-current-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
@@ -23,14 +26,16 @@ if (toggle && links) {
   );
 }
 
-if (EMAIL) {
+if (EMAIL_USER && EMAIL_DOMAIN) {
   document.querySelectorAll("[data-email]").forEach((el) => {
-    const a = el.querySelector("a");
-    if (a) {
-      a.href = "mailto:" + EMAIL;
-      a.textContent = EMAIL;
-    }
     el.hidden = false;
+    const btn = el.querySelector("button");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        const to = EMAIL_USER + "@" + EMAIL_DOMAIN;
+        window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent("Message from your website");
+      });
+    }
   });
 }
 

@@ -147,6 +147,8 @@ p { margin: 0 0 1em; }
 .section-foot { margin-top: 30px; }
 
 /* Contact */
+.link-button { font: inherit; padding: 0; background: none; border: 0; color: var(--maroon); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; cursor: pointer; text-align: left; }
+.link-button:hover { color: var(--maroon-dark); }
 .contact-list { list-style: none; margin: 0; padding: 0; }
 .contact-list li { padding: 10px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 16px; }
 .contact-list li:last-child { border-bottom: 1px solid var(--line); }
