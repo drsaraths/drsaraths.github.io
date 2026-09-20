@@ -84,7 +84,7 @@ def build_index(records):
     page = re.sub(r"<!-- selected:start -->.*?<!-- selected:end -->",
                   lambda m: f"<!-- selected:start -->\n{rows}\n          <!-- selected:end -->", page, flags=re.S)
     first = min(r["year"] for r in records)
-    stats = f"Since {first} I have published {len(records)} papers indexed in Scopus."
+    stats = f"Since {first}, I have published {len(records)} research papers indexed in Scopus."
     page = re.sub(r"<!-- stats:start -->.*?<!-- stats:end -->",
                   lambda m: f"<!-- stats:start -->{stats}<!-- stats:end -->", page, flags=re.S)
     path.write_text(page, encoding="utf-8")
