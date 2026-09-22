@@ -37,6 +37,21 @@ a:hover { color: var(--maroon-dark); }
 :focus-visible { outline: 2px solid var(--maroon); outline-offset: 3px; border-radius: 2px; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
 p { margin: 0 0 1em; }
+
+/* Justified body copy: readable multi-line paragraphs get true justification
+   with hyphenation, so word spacing stays even instead of ragged or gappy.
+   Short lines (buttons, nav, captions, meta rows) are left as-is on purpose. */
+.section-body p,
+.hero-text,
+.page-head p,
+.notfound p,
+.pub-venue {
+  text-align: justify;
+  text-align-last: left;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+}
 .container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
 .skip-link {
   position: absolute; left: 12px; top: -60px; z-index: 100;
@@ -205,6 +220,12 @@ footer { border-top: 1px solid var(--line); padding: 26px 0 34px; font-size: .88
 @media (max-width: 720px) {
   .profile-photo { width: 84px; height: 84px; }
   .identity { gap: 16px; }
+  /* Justified text looks worse than ragged text in a narrow column, so
+     mobile reverts to left alignment. */
+  .section-body p, .hero-text, .page-head p, .notfound p, .pub-venue {
+    text-align: left;
+    hyphens: none;
+  }
   .menu-toggle { display: inline-block; }
   .nav-links {
     display: none; position: absolute; top: var(--header-h); left: 0; right: 0;
